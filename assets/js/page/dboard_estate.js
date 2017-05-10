@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 	//.portlet_info
 	
-	$('.portlet_info span.info_title').text('Block 04P11101');
+	$('.portlet_info span.info_title').text('ROYAL PALM 5 ESTATE');
 	$('.portlet_info span.info_subtitle').text('Tanah Raja');
 	
 	
@@ -181,6 +181,196 @@ $(document).ready(function(){
 			}, {
 				name: 'Actual',
 				data: [790452,925548,1086540,1133808,1382004,1472640,1530204,1444560,1295424,1258040]
+			}]
+		});
+		$('#highcharts-ht1').highcharts({
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: 'Budget 2016'
+			},
+			xAxis: {
+				categories: [
+					'Estate A',
+				]
+			},
+			yAxis: [{
+				min: 0,
+				title: {
+					text: 'RM'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 3
+				},
+				series: {
+					borderColor: '#303030'
+				}
+			},
+			series: [{
+				name: 'Target',
+				color: '#f50',
+				data: [6846000],
+				pointPadding: 0.3,
+				pointPlacement: -0.2
+			}, {
+				name: 'Actual',
+				color: 'rgba(126,86,134,.9)',
+				data: [812000],
+				pointPadding: 0.4,
+				pointPlacement: -0.2
+			}]
+		});
+
+		$('#highcharts-ht2').highcharts({
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: 'Harvest 2016'
+			},
+			xAxis: {
+				categories: [
+					'Estate A',
+				]
+			},
+			yAxis: [{
+				min: 0,
+				title: {
+					text: 'Metric Ton'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'Target',
+				color: '#006fff',
+				data: [4000],
+				pointPadding: 0.3,
+				pointPlacement: -0.2
+			}, {
+				name: 'Actual',
+				color: '#00f',
+				data: [3580],
+				pointPadding: 0.4,
+				pointPlacement: -0.2
+			}]
+		});
+
+	});
+	Highcharts.setOptions({
+		colors: ['rgb(255, 85, 0)','rgb(255, 255, 0)','rgb(0, 255, 0)', 'rgb(0, 153, 255)','rgb(0, 0, 255)']
+	});
+	Highcharts.chart('donut', {
+		chart: {
+			type: 'pie'
+		},
+		title: {
+			text: ''
+		},
+		yAxis: {
+			title: {
+				text: ''
+			}
+		},
+		plotOptions: {
+			pie: {
+				shadow: false
+			}
+		},
+		tooltip: {
+			valueSuffix: '%'
+		},
+		series: [{
+		},
+			{
+			name: 'Versions',
+			data: [["Immature",22],["Young (4-5 years)",21],["Prime (10-20 Years)",14],["Old (21-25 Years)",17],[">25 Years",26]],
+			size: '100%',
+			innerSize: '70%',
+			dataLabels: {
+				formatter: function () {
+					// display only if larger than 1
+					return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+				}
+			}
+		}]
+	});
+
+	$(function () {
+		Highcharts.setOptions({
+			colors: ['#09f','#0fa']
+		});
+		Highcharts.chart('line_chart_1', {
+			chart: {
+				type: 'line'
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: ''
+			},
+			xAxis: {
+				categories: ['July','August','September','October','November','December','January','February','March','April','May','June']
+			},
+			yAxis: {
+				title: {
+					text: 'Metric Ton',
+					align: 'middle'
+				}
+			},
+			rangeSelector: {
+				selected: 1
+			},
+			tooltip: {
+				crosshairs: true,
+				shared: true,
+				valueSuffix: 'MT'
+			},
+			plotOptions: {
+				spline: {
+					marker: {
+						radius: 4,
+						lineColor: '#666666',
+						lineWidth: 1
+					}
+				}
+			},
+			series: [{
+				name: 'Financial Year 2016',
+				marker: {
+					symbol: 'square'
+				},
+				data: [1500,1800,2300,2500,2800,3000,3100,3400,3400,3800,4000,4100]
+
+			}, {
+				name: 'Financial Year 2017',
+				marker: {
+					symbol: 'diamond'
+				},
+				data: [1300,1400,1600,1800,2000,3000]
 			}]
 		});
 	});
