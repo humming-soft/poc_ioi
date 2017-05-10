@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="-83 -13 2403 1000"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="plate_vector_map_toba_samosir.svg"
+   inkscape:export-filename="C:\xampp\htdocs\mrt\MRTL2\ceodbl2\assets\svg\plate_vector_map.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="416.16605"
+     inkscape:cy="665.03476"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4210"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="false" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="addhoc line"
+     style="display:inline" />
+  <g
+     style="display:inline"
+     inkscape:label="poi"
+     id="g4210"
+     inkscape:groupmode="layer">
+    <rect
+       style="display:inline"
+       id="v_estate_6"
+       class="v_depot"
+       width="15.880999"
+       height="15.880999"
+       x="365.04333"
+       y="848.2558"
+       ry="0.14876911"
+       transform="matrix(0.71898838,-0.6950221,0.6950221,0.71898838,0,0)" />
+    <rect
+       style="display:inline"
+       id="v_estate_7"
+       class="v_depot"
+       width="15.880999"
+       height="15.880999"
+       x="57.019806"
+       y="704.16931"
+       ry="0.14876911"
+       transform="matrix(0.71898838,-0.6950221,0.6950221,0.71898838,0,0)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="legend"
+     style="display:inline" />
+</svg>

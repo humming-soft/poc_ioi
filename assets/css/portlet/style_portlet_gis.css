@@ -1,0 +1,490 @@
+
+/*override*/
+
+
+
+/*
+general
+
+*/
+.inlineblock > div,
+.inlineblock > ul,
+.inlineblock > li,
+.inlineblock > span {
+	display: inline-block;
+}
+
+
+
+/*
+override
+
+*/
+
+
+
+
+/*
+breadcrumb
+
+*/
+.custom_breadcrumb {
+	padding: 0 5px;
+	font-size: .9em;
+}
+.custom_breadcrumb a {
+	text-decoration: none;
+	color: #39f;
+}
+	.custom_breadcrumb a:hover {
+		color: #4af;
+	}
+.breadcrumb_divider {
+	padding: 0 10px;
+}
+div.custom_breadcrumb div.title {
+	color: #fff;
+	padding: 0 0 5px;
+	font-size: 1.5em;
+	border-bottom: 1px solid #335;
+}
+
+
+
+/*
+portlet_setup
+
+*/
+div.portlet {
+	margin: 0;
+	padding: 0;
+}
+
+div.portlet div.content {
+	margin: 5px 5px;
+	border: 1px solid #000;
+}
+
+div.portlet_title {
+	padding: 5px 10px;
+	font-size: 1em;
+	color: #fff;
+	background: rgba(255,255,255,.3);
+}
+.fa_title_icon {
+	padding: 0 10px 0 0;
+}
+
+.portlet_content {
+}
+
+div#container {
+	color: #fff !important;
+}
+rect.highcharts-background {
+	fill: none !important;
+}
+
+
+
+/*
+filter
+
+*/
+div.portlet_filter div.content {
+	background: #252237;
+}
+div.portlet_filter div.portlet_content {
+}
+	
+div.portlet_filter div.portlet_title {
+	color: #fff;
+}
+
+.filter div {
+	padding: 10px;
+}
+
+/*filter_lot*/
+.lot_plate {
+	display: inline-block;
+	margin: 5px 3px;
+	width: 100px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	text-align: center;
+	background: #366;
+	cursor: pointer;
+}
+
+/*filter submit*/
+.filter_submit {
+	text-align: right;
+	border-top: 1px solid #779;
+}
+
+
+
+/*
+harvesting_bar
+
+*/
+
+div.portlet_harvesting_bar div.content {
+	background: #252237;
+}
+
+div.portlet_harvesting_bar_data div.row div.item {
+	padding: 3px;
+}
+
+span.item_title {
+	display: block;
+	font-size: .8em;
+	color: #ddf;
+}
+	span.item_title_variance {
+		display: block;
+		font-size: .8em;
+		color: #aaa;
+	}
+
+span.item_value {
+	display: block;
+	font-size: 1em;
+	color: #fff;
+}
+
+div.psd_data_type1 {
+	padding: 5px 10px !important;
+	background: rgba(255,255,255,.1);
+}
+div.psd_data_type2 {
+	padding: 5px 10px !important;
+	background: rgba(255,255,255,.15);
+}
+
+span.iv_early {
+	padding: 0 0 0 5px;
+	border-left: 3px solid #9f3;
+}
+span.iv_actual {
+	padding: 0 0 0 5px;
+	border-left: 3px solid #f06;
+}
+span.iv_late {
+	padding: 0 0 0 5px;
+	border-left: 3px solid #39f;
+}
+span.iv_early_variance {
+	padding: 0 0 0 10px;
+	border-left: 3px solid #9f3;
+}
+span.iv_late_variance {
+	padding: 0 0 0 10px;
+	border-left: 3px solid #39f;
+}
+
+span.iv_baseline {
+	padding: 0 0 0 5px;
+	border-left: 3px solid #0ff;
+}
+span.iv_kpitarget {
+	padding: 0 0 0 5px;
+	border-left: 3px solid #b7f;
+}
+span.iv_shortfall {
+	padding: 0 0 0 5px;
+	border-left: 3px solid #ff0;
+}
+span.iv_actualprogress {
+	padding: 0 0 0 5px;
+	border-left: 3px solid #f60;
+}
+
+span.harvesting_bar_arrow {
+	padding: 0 5px;
+	font-size: 1.2em;
+	display: block;
+	position: absolute;
+	top: 9px;
+	right: 12px;
+	border-radius: 5px;
+	background: #113;
+}
+	span.harvesting_bar_arrow_up {
+		color: #9f3;
+	}
+	span.harvesting_bar_arrow_down {
+		color: #f06;
+	}
+
+
+
+
+/*
+harvesting_donut
+
+*/
+
+div.portlet_harvesting_donut div.content {
+	background: #252237;
+}
+
+div.portlet_harvesting_donut_data div.row div.item {
+	padding: 3px;
+}
+
+span.item_title {
+	display: block;
+	font-size: .8em;
+	color: #ddf;
+}
+	span.item_title_variance {
+		display: block;
+		font-size: .8em;
+		color: #aaa;
+	}
+
+
+
+
+/*
+harvesting_lotperf
+
+*/
+
+div.portlet_harvesting_lotperf div.content {
+	background: #252237;
+}
+
+div.portlet_harvesting_lotperf_data div.row div.item {
+	padding: 3px;
+}
+
+span.item_title {
+	display: block;
+	font-size: .8em;
+	color: #ddf;
+}
+	span.item_title_variance {
+		display: block;
+		font-size: .8em;
+		color: #aaa;
+	}
+
+
+
+
+/*
+bar chart comparison
+
+*/
+
+
+div#float_plate div#plate_commercial {
+	/*z-index: 999;*/
+}
+div#float_plate div#plate_commercial div.barchart {
+	margin-right: 10px;
+}
+
+/*for variance*/
+div#float_plate div#plate_commercial div.barchart #barcom_variance {
+	z-index: 999;
+	position: absolute;
+	width: 10%;
+	height: 75%;
+	right: 30%;
+	top: 200px;
+}
+
+/*for harvesting*/
+div#float_plate div#plate_commercial div.barchart #barcom_harvested {
+	z-index: 999;
+	position: absolute;
+	width: 30%;
+	height: 75%;
+	right: 0;
+	top: 200px;
+}
+
+div#float_plate div#plate_commercial div.barchart span#barcom_harvested_detail {
+	z-index: 99999;
+}
+
+
+
+/*
+bar chart comparison
+
+*/
+
+/*block_plate*/
+
+#block_plate {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	right: 43%;
+}
+
+#block_plate > div.division {
+	padding: 0 0;
+}
+
+#block_plate > div.division > div.block {
+	display: inline-block;
+	margin: 5px;
+	padding: 10px 20px;
+	width: 300px;
+	height: 125px;
+	border: 1px solid #77f;
+	border-top: 10px solid #77f;
+	background: rgba(100,0,255,.2);
+}
+	#block_plate > div.division > div.block:hover {
+		border: 1px solid #aaf;
+		border-top: 10px solid #aaf;
+		background: rgba(100,0,255,.3);
+	}
+
+#float_plate .division .btn_go_sort {
+	display: block;
+	width: 200px; 
+	color: #09f;
+}
+	#float_plate .division .btn_go_sort:hover {
+		cursor: pointer;
+	}
+
+
+/*button group*/
+
+#pl_region > span {
+	z-index: 9999;
+}
+
+#pl_region > span > span {
+	z-index: 999;
+}
+
+.btn-grey {
+	background: #444466;
+}
+	.btn-grey:hover {
+		color: #fff;
+		background: #434565;
+	}
+
+#float_plate .button_group h2 {
+	/*margin-top: 5px;*/
+}
+
+/*btn go detail*/
+
+div#block_plate {
+	z-index: 999;
+}
+
+#float_plate .button_group .btn_go_detail {
+	/*z-index: 9;*/
+	display: block;
+	padding: 0 10px;
+	font-size: .8em;
+	text-align: right;
+	/*background: #336;*/
+}
+	#float_plate #pl_estate .button_group .btn_go_detail {
+		margin-top: 22px;
+	}
+	#float_plate #pl_region .button_group .btn_go_detail {
+		margin-top: 35px;
+	}
+
+#float_plate span.button_group span.btn_go_sort:hover {
+	cursor: pointer;
+}
+#float_plate span.button_group span.btn_go_detail:hover {
+	cursor: pointer;
+}
+
+
+/*
+gis breadcrumb
+
+*/
+div.gis_breadcrumb {
+	position: absolute;
+	z-index: 99999;
+	padding: 0 20px;
+}
+div.gis_breadcrumb > div {
+	/*display: block;*/
+}
+
+
+/*
+overall panel
+
+*/
+
+#float_plate .overall {
+	display: block;
+	position: absolute;
+	right: 10px;
+	height: 180px;
+	width: 39%;
+}
+#float_plate .overall span {
+	display: block;
+}
+#float_plate .overall > span.title {
+	margin: 10px 0;
+	font-size: 1.2em;
+}
+
+#float_plate .overall span.content {
+	display: inline-block;
+	padding: 0 10px;
+	width: 32%;
+}
+#float_plate .overall span.content .block_title {
+	font-size: 1.1vw;
+	background: #444;
+	color: #fff;
+	padding: 5px 20px;
+}
+#float_plate .overall span.content .block_val {
+	font-size: 1.7vw;
+	background: #55f;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

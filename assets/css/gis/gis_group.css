@@ -1,0 +1,114 @@
+
+
+/*____________________________________________
+map and plate
+--------------------------------------------*/
+div#infographic {
+}
+div#infographic div.ig_plate {
+	position: absolute;
+}
+div#infographic div img{
+	width: 100%;
+	height: 100%;
+}
+
+#dashboard {
+	width: 99%;
+	padding: 5px 0;
+}
+
+
+/*____________________________________________
+float - plate_gis and stats
+--------------------------------------------*/
+
+/*setup*/
+#float_plate {
+	/*position: absolute;*/
+	width: 100%;
+	height: 100%;
+}
+#plate_vector_map,
+#pl_estate,
+#pl_region {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/*z index*/
+#plate_vector_map {
+	z-index: 100;
+}
+#pl_estate > span {
+	z-index: 3000;
+}
+#pl_region > div {
+	z-index: 3000;
+}
+
+
+/*	plate_vector_map
+*/
+#plate_vector_map {
+	position: absolute;
+}
+
+
+/*	pl_region
+*/
+#pl_region span {
+	/*display: none;*/
+	position: absolute;
+	font-size: 1.3em;
+	color: rgba(150,255,200,.6);
+}
+#pl_region span.set1 {top: 78%; left: 28%;}
+#pl_region span.set2 {top: 43%; left: 39%;}
+#pl_region span.set3 {top: 38%; left: 19%;}
+#pl_region span.set4 {top: 20%; left: 39%;}
+
+/*	pl_estate
+*/
+#pl_estate span {
+	/*display: none;*/
+	position: absolute;
+	font-size: 1em;
+	color: #eef;
+	text-shadow:
+	-1px -1px 0 rgba(0,0,255,.3),  
+	1px -1px 0 rgba(0,0,255,.3),
+	-1px 1px 0 rgba(0,0,255,.3),
+	1px 1px 0 rgba(0,0,255,.3);
+}
+#pl_estate span.set1 {top: 67.5%; right: 75.5%;}
+#pl_estate span.set2 {top: 66.5%; left: 43.0%;}
+#pl_estate span.set3 {top: 53.5%; left: 40.5%;}
+#pl_estate span.set4 {top: 58.0%; right: 64.5%;}
+#pl_estate span.set5 {top: 31.0%; right: 62.5%;}
+#pl_estate span.set6 {top: 26.5%; right: 63.5%;}
+#pl_estate span.set7 {top: 8.0%; left: 37.5%;}
+
+
+/*button for Harvesting detail*/
+div#float_plate div#plate_commercial div.barchart div.button_group {
+	position: absolute;
+	width: 200px;
+	height: 35px;
+	right: 0;
+	top: 205px;
+	z-index: 2000;
+}
+
+
+/*____________________________________________
+float - furniture
+--------------------------------------------*/
+
+div#barcom_harvested {
+	height: 600px;
+}
+
+
+
