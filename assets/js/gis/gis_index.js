@@ -2,6 +2,10 @@ $(document).ready(function(){
 	
 	$('.plate_vector_map_indonesia').load('../assets/svg/plate_vector_map_index.svg',function(){
 		
+		// nav
+		$(".goto_region").click(function(){
+			window.location.href = "region.php";
+		})
 		
 		var json = [
 			{"vector_estate":"v_estate_1","vector_status":"1"},
@@ -226,6 +230,7 @@ $(document).ready(function(){
 	$("#barcom_harvested_detail").click(function(){
 		window.location.href = "dboard_harvesting_and_paid_all.php";
 	})
+	
 	
 	
 	

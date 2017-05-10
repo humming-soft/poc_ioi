@@ -517,3 +517,178 @@ float - furniture
 div#barcom_harvested {
 	height: 600px;
 }
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+OVERRRIDE
+
+
+
+
+
+*/
+
+
+
+
+
+
+/*
+button
+*/
+.button_set {
+	text-align: right;
+}
+
+/*
+body
+*/
+
+body {
+	overflow: hidden;
+}
+
+
+/*
+svg nav
+*/
+.plate_vector_map_toba_samosir {
+	z-index: 9999!important;
+}
+.goto_estate:hover {
+	cursor: pointer!important;
+}
+
+
+/*
+overall panel
+
+*/
+
+#float_plate .overall {
+	display: block;
+	position: absolute;
+	right: 10px;
+	height: 180px;
+	width: 55%;
+}
+#float_plate .overall span {
+	display: block;
+}
+#float_plate .overall > span.title {
+	margin: 10px 0;
+	font-size: 1.2em;
+}
+
+#float_plate .overall span.content {
+	display: inline-block;
+	padding: 0 10px;
+	width: 32%;
+}
+#float_plate .overall span.content .block_title {
+	font-size: 1.1vw;
+	background: #444;
+	color: #fff;
+	padding: 5px 20px;
+	text-align: center;
+}
+#float_plate .overall span.content .block_val {
+	font-size: 1.7vw;
+	background: #55f;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+}
+
+
+/*
+for variance
+*/
+
+div#float_plate div#plate_commercial div.barchart #barchart1 {
+	z-index: 999;
+	position: absolute;
+	width: 24%;
+	height: 30%;
+	left: 51%;
+	top: 6%;
+}
+div#float_plate div#plate_commercial div.barchart #barchart2 {
+	z-index: 999;
+	position: absolute;
+	width: 24%;
+	height: 30%;
+	left: 76%;
+	top: 6%;
+}
+div#float_plate div#plate_commercial div.barchart #barchart3 {
+	z-index: 999;
+	position: absolute;
+	width: 24%;
+	height: 30%;
+	left: 51%;
+	top: 37%;
+}
+div#float_plate div#plate_commercial div.barchart #barchart4 {
+	z-index: 999;
+	position: absolute;
+	width: 24%;
+	height: 30%;
+	left: 76%;
+	top: 37%;
+}
+div#float_plate div#plate_commercial div.barchart #barchart5 {
+	z-index: 999;
+	position: absolute;
+	width: 48%;
+	height: 31%;
+	left: 2%;
+	top: 68%;
+}
+div#float_plate div#plate_commercial div.barchart #barchart6 {
+	z-index: 999;
+	position: absolute;
+	width: 24%;
+	height: 31%;
+	left: 51%;
+	top: 68%;
+}
+div#float_plate div#plate_commercial div.barchart #barchart7 {
+	z-index: 999;
+	position: absolute;
+	width: 24%;
+	height: 31%;
+	left: 76%;
+	top: 68%;
+}
+
+div#float_plate div#plate_commercial div.barchart span#barcom_harvested_detail {
+	z-index: 99999;
+}
+
+
+
+
+div div#plate_commercial div.barcom{
+	border-top: 10px solid #446;
+	border-left: 1px solid #446;
+	border-right: 1px solid #446;
+	background: rgba(0,0,0,.55);!important;
+	border-radius: 4px;
+}
+
+
+
+

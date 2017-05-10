@@ -25,7 +25,7 @@
 						<?php include 'module/gis_accessories_region.php' ?>
 						
 						<!-- -- -->
-						<img src="../assets/images/base/region.jpg">
+						<img src="../assets/images/base/blank.jpg">
 					</div>
 				</div>
 			</div>

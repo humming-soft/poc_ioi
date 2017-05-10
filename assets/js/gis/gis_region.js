@@ -5,6 +5,11 @@ $(document).ready(function(){
 	});
 	$('.plate_vector_map_toba_samosir').load('../assets/svg/plate_vector_map_region.svg',function(){
 		
+		// nav
+		$(".goto_estate").click(function(){
+			window.location.href = "estate.php";
+		})
+		
 		// vector_track
 		var json = [ 
 			{"vector_track":"legend_v_track_1","vector_status":"0","url":""},
@@ -319,7 +324,283 @@ $(document).ready(function(){
 	
 	
 	
-	
+	$(function () {
+			Highcharts.setOptions({
+				colors: ['#f50','#ff0','#f00']
+			});
+			$('#barchart1').highcharts({
+				chart: {
+					type: 'column'
+				},
+				title: {
+					text:'Plantation Utilization Area',
+					align: 'left'
+				},
+				subtitle: {
+					text: '',
+					align: 'left'
+				},
+				yAxis: {
+					title: {
+						text:'Hectar',
+						align: 'high'
+					}
+				},
+				xAxis: {
+					categories: [' ']
+				},
+				tooltip: {
+					valueSuffix: ' Hectar'
+				},
+				plotOptions: {
+					line: {
+						dataLabels: {
+							enabled: true
+						},
+						enableMouseTracking: false
+					}
+				},
+				credits: {
+					enabled: false
+				},
+				series: [{
+					name: 'Total Hectar',
+					data: [12]
+				},{
+					name: 'Planted Hectar',
+					data: [10]
+				}
+				]
+			});
+		});
+		$(function () {
+			Highcharts.setOptions({
+				colors: ['#09f']
+			});
+			$('#barchart2').highcharts({
+				chart: {
+					type: 'column'
+				},
+				title: {
+					text:'Budget',
+					align: 'left'
+				},
+				subtitle: {
+					text: '',
+					align: 'left'
+				},
+				xAxis: {
+					categories: [2014,2015,2016]
+				},
+				yAxis: {
+					title: {
+						text:'(Million MT)',
+						align: 'high'
+					}
+				},
+				tooltip: {
+					valueSuffix: ' MT'
+				},
+				credits: {
+					enabled: false
+				},
+				series: [{
+					name: 'FFB Processed (Million MT)',
+					data: [15.82,14.79,14.83]
+				}]
+			});
+		});
+		$(function () {
+			Highcharts.setOptions({
+				colors: ['#f0c']
+			});
+			$('#barchart3').highcharts({
+				chart: {
+					type: 'column'
+				},
+				title: {
+					text:'Yield Estimation',
+					align: 'left'
+				},
+				subtitle: {
+					text: '',
+					align: 'left'
+				},
+				xAxis: {
+					categories: [2014,2015,2016]
+				},
+				yAxis: {
+					title: {
+						text:'MT/Ha',
+						align: 'high'
+					}
+				},
+				tooltip: {
+					valueSuffix: ' MT/Ha'
+				},
+				credits: {
+					enabled: false
+				},
+				series: [{
+					name: 'FFB Yield (MT/ha)',
+					data: [18.99,18.94,17.93]
+				}]
+			});
+		});
+		$(function () {
+			Highcharts.setOptions({
+				colors: ['#5f3','#0ff']
+			});
+			$('#barchart4').highcharts({
+				chart: {
+					type: 'column'
+				},
+				title: {
+					text:'Mill Production',
+					align: 'left'
+				},
+				subtitle: {
+					text: '',
+					align: 'left'
+				},
+				xAxis: {
+					categories: [2014,2015,2016]
+				},
+				yAxis: {
+					title: {
+						text:'(%)',
+						align: 'high'
+					}
+				},
+				tooltip: {
+					valueSuffix: ' %'
+				},
+				credits: {
+					enabled: false
+				},
+				series: [{
+					name: 'OER',
+					data: [20.44,21.01,20.91]
+				},{
+					name: 'KER',
+					data: [5.34,5.46,5.36]
+				}]
+			});
+		});
+		$(function () {
+			Highcharts.setOptions({
+				colors: ['#09f']
+			});
+			$('#barchart5').highcharts({
+				chart: {
+					type: 'line'
+				},
+				title: {
+					text:'Production Yearly',
+					align: 'left'
+				},
+				subtitle: {
+					text: '',
+					align: 'left'
+				},
+				xAxis: {
+					categories: [2014,2015,2016]
+				},
+				yAxis: {
+					title: {
+						text:'(Million MT)',
+						align: 'high'
+					}
+				},
+				tooltip: {
+					valueSuffix: ' MT'
+				},
+				credits: {
+					enabled: false
+				},
+				series: [{
+					name: 'FFB Processed (Million MT)',
+					data: [15.82,14.79,14.83]
+				}]
+			});
+		});
+		$(function () {
+			Highcharts.setOptions({
+				colors: ['#f0c']
+			});
+			$('#barchart6').highcharts({
+				chart: {
+					type: 'line'
+				},
+				title: {
+					text:'CPO Monthly',
+					align: 'left'
+				},
+				subtitle: {
+					text: '',
+					align: 'left'
+				},
+				xAxis: {
+					categories: [2014,2015,2016]
+				},
+				yAxis: {
+					title: {
+						text:'MT/Ha',
+						align: 'high'
+					}
+				},
+				tooltip: {
+					valueSuffix: ' MT/Ha'
+				},
+				credits: {
+					enabled: false
+				},
+				series: [{
+					name: 'FFB Yield (MT/ha)',
+					data: [18.99,18.94,17.93]
+				}]
+			});
+		});
+		$(function () {
+			Highcharts.setOptions({
+				colors: ['#5f3','#0ff']
+			});
+			$('#barchart7').highcharts({
+				chart: {
+					type: 'line'
+				},
+				title: {
+					text:'PIC Monthly',
+					align: 'left'
+				},
+				subtitle: {
+					text: '',
+					align: 'left'
+				},
+				xAxis: {
+					categories: [2014,2015,2016]
+				},
+				yAxis: {
+					title: {
+						text:'(%)',
+						align: 'high'
+					}
+				},
+				tooltip: {
+					valueSuffix: ' %'
+				},
+				credits: {
+					enabled: false
+				},
+				series: [{
+					name: 'OER',
+					data: [20.44,21.01,20.91]
+				},{
+					name: 'KER',
+					data: [5.34,5.46,5.36]
+				}]
+			});
+		});
 	
 	
 	
