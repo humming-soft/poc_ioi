@@ -13,13 +13,43 @@
 	<div id="plate_vector_map" class="plate_vector_map_indonesia">
 		
 	</div>
-	<div id="plate_commercial" class="hidden">
+	<div id="plate_commercial_old" class="hidden">
 		<div class="barchart">
 			<!-- <span id="barcom_harvested_detail"><button type="button" class="btn btn-primary btn-sm">Details</button></span> -->
 			<div id="barchart1" class="barcom"></div>
 			<div id="barchart2" class="barcom"></div>
 			<div id="barchart3" class="barcom"></div>
 			<div id="barchart4" class="barcom"></div>
+		</div>
+	</div>
+	<div id="plate_commercial">
+		<div class="overall">
+			<span class="title">OVERALL HARVESTING</span>
+			<span class="content c1">
+				<span class="block_title">Total <br>Budget</span>
+				<span class="block_val">888,888</span>
+			</span>
+			<span class="content c2">
+				<span class="block_title">OER / KER Rate <br>(%)</span>
+				<span class="block_val">57%</span>
+			</span>
+			<span class="content c3">
+				<span class="block_title">Total FFB harvested <br>(MT)</span>
+				<span class="block_val">888,888</span>
+			</span>
+			<br><br>
+			<span class="content c1">
+				<span class="block_title">Total FFB processed <br>(MT)</span>
+				<span class="block_val">888,888</span>
+			</span>
+			<span class="content c2">
+				<span class="block_title">Total CPO Production <br>(MT)</span>
+				<span class="block_val">888,888</span>
+			</span>
+			<span class="content c3">
+				<span class="block_title">Total Palm Kernel <br>Production (MT)</span>
+				<span class="block_val">888,888</span>
+			</span>
 		</div>
 	</div>
 	<div id="plate_physical">
