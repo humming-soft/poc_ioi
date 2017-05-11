@@ -1405,7 +1405,8 @@ div.portlet_hi #hi1{
 	height: 260px;
 }
 div.portlet_hi #highcharts-ht1,
-div.portlet_hi #highcharts-ht2 {
+div.portlet_hi #highcharts-ht2,
+div.portlet_hi #highcharts-ht3{
 	margin-top: 10px;
 }
 
