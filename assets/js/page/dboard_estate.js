@@ -534,8 +534,8 @@ $(document).ready(function(){
 			spacingTop: 0,
 			spacingBottom: 0,
 			spacingLeft: 0,
-			spacingRight: 0
-			//height: 250
+			spacingRight: 0,
+			height: 250
 		},
 		title: {
 			text: 'Harvesting Rounds',
@@ -551,19 +551,21 @@ $(document).ready(function(){
 		plotOptions: {
 			pie: {
 				dataLabels: {
-					enabled: false,
-					distance: -50,
-
+					enabled: true,
+					distance: 10,
 					style: {
 						fontWeight: 'bold',
 						color: 'white',
 						textShadow: '0px 1px 2px black'
+					},
+					formatter: function () {
+						return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y : null;
 					}
 				},
 				startAngle: 0,
 				endAngle: 360,
 				center: ['50%', '50%'],
-				size: '100%'
+				size: '80%'
 			}
 		},
 		tooltip:{
