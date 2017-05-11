@@ -21,11 +21,9 @@
 						</div>
 					</div> -->
 					<div id="header_menu" class="col-md-12">
-						<span>TEMPORARY MENU ONLY : </span>
 						<span class="hm_button active"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></span>
-						<span class="hm_button active"><a href="region.php"><i class="fa fa-paw" aria-hidden="true"></i> Region</a></span>
-						<span class="hm_button active"><a href="group.php"><i class="fa fa-paw" aria-hidden="true"></i> Group</a></span>
-						<span class="hm_button active"><a href="estate.php"><i class="fa fa-paw" aria-hidden="true"></i> Estate</a></span>
+						<span class="hm_button active"><a href="summary.php"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Summary</a></span>
+						<span class="hm_button active"><a href="issue.php"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Issue</a></span>
 						<span class="hm_user_profile">
 							<i class="fa fa-user" aria-hidden="true"></i> Profile 
 							<i class="fa fa-caret-down" aria-hidden="true"></i>

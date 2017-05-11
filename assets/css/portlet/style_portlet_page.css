@@ -41,6 +41,22 @@ div.height_x2a {
 	overflow: hidden;
 }
 
+
+/*
+generic
+*/
+
+.goto_left {
+	text-align: left !important;
+}
+.goto_center {
+	text-align: center !important;
+}
+.goto_right {
+	text-align: right !important;
+}
+
+
 /*
 property
 */
