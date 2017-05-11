@@ -177,11 +177,28 @@ overall panel
 #float_plate .overall {
 	display: block;
 	position: absolute;
-	right: 10px;
-	height: 180px;
-	width: 55%;
+	/*right: 10px;*/
+	left: 20px;
+	top: 60px;
+	width: 100%;
+	height: 100%;
 }
-#float_plate .overall span {
+
+#float_plate .barchart_group {
+	background: #333;
+	width: 32%;
+	height: 30%;
+}
+
+#float_plate .barchart_group .title1 {
+	background: #f0f;
+	font-size: 1.3vw;
+}
+
+
+/*old*/
+
+/*#float_plate .overall span {
 	display: block;
 }
 #float_plate .overall > span.title {
@@ -207,7 +224,7 @@ overall panel
 	color: #fff;
 	padding: 10px 0;
 	text-align: center;
-}
+}*/
 
 
 

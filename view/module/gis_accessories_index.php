@@ -24,7 +24,13 @@
 	</div>
 	<div id="plate_commercial">
 		<div class="overall">
-			<span class="title">OVERALL HARVESTING</span>
+			<div class="barchart_group barchart_group_1">
+				<div class="title1">poi</div>
+				<div class="title2">poi</div>
+				<div class="barchart">poi</div>
+				<div class="status">poi</div>
+			</div>
+			<!-- <span class="title">OVERALL HARVESTING</span>
 			<span class="content c1">
 				<span class="block_title">Total <br>Budget</span>
 				<span class="block_val">888,888</span>
@@ -49,7 +55,7 @@
 			<span class="content c3">
 				<span class="block_title">Total Palm Kernel <br>Production (MT)</span>
 				<span class="block_val">888,888</span>
-			</span>
+			</span> -->
 		</div>
 	</div>
 	<div id="plate_physical">
