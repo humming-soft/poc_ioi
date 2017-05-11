@@ -1496,12 +1496,37 @@ div.portlet_eap div.content {
 
 /*portlet_product (Productivity)*/
 
-div.portlet_line_chart div.content {
+div.portlet_line_chart div.content,
+.portlet_block_number div.content {
 	background: #252237;
 }
-
+.portlet_block_number .block_color_a4 {
+	color: #ff0;
+}
+.highcharts_inside.col2,
+.highcharts_inside.col3{
+	font-size: 20px;
+	margin-top: -7px;
+	text-align: center;
+}
+div.psd_data_type3 {
+	padding: 5px 10px !important;
+	background: rgba(255,255,255,.30);
+}
 .m-t-15{
 	margin-top: 15px;
+}
+.m-t-10{
+	margin-top: 10px;
+}
+.m-10{
+	margin: 10px;
+}
+.t-a-left{
+	text-align: left;
+}
+.f-s-25{
+	font-size: 25px;
 }
 
 
