@@ -242,14 +242,4 @@ $(document).ready(function(){
 	
 	
 	
-	
-	
-	
-	
-	
-	// a
-	
-	
-	
-	
 });	

@@ -37,5 +37,5 @@
 	</div>
 </div>
 <script type="text/javascript" src="../assets/js/page/dboard_estate.js"></script>
-<!-- <link rel="stylesheet" type="text/css" href="../assets/css/page/block_04P11101.css"> -->
+<link rel="stylesheet" type="text/css" href="../assets/css/page/estate.css">
 <?php include 'template/default_footer.php' ?>
