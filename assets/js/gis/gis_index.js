@@ -54,169 +54,288 @@ $(document).ready(function(){
 		// $('#plate_commercial .overall span.c2 span.block_val').text('146,625,480');
 		// $('#plate_commercial .overall span.c3 span.block_val').text('3,022,720');
 		
-		$(function () {
-			Highcharts.setOptions({
-				colors: ['#f50','#ff0','#f00']
-			});
-			$('#barchart1').highcharts({
-				chart: {
-					type: 'column'
-				},
-				title: {
-					text: 'PK and CPO Production (Million MT)',
-					align: 'left'
-				},
-				subtitle: {
-					text: '',
-					align: 'left'
-				},
-				xAxis: {
-					categories: [2014,2015,2016]
-				},
-				yAxis: {
-					title: {
-						text:'(Million MT)',
-						align: 'high'
-					}
-				},
-				tooltip: {
-					valueSuffix: ' Million MT'
-				},
-				plotOptions: {
-					line: {
-						dataLabels: {
-							enabled: true
-						},
-						enableMouseTracking: false
-					}
-				},
-				credits: {
-					enabled: false
-				},
-				series: [{
-					name: 'PK Production',
-					data: [1.15,1.23,1.18]
-				},{
-					name: 'CPO Production',
-					data: [4.3,4.11,4.10]
-				}
+		
+		// 
+		// barchart group
+		// 
+		
+		// group 1
+		Highcharts.chart('barchart_1_left', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: [
+					'April'
 				]
-			});
-		});
-		$(function () {
-			Highcharts.setOptions({
-				colors: ['#09f']
-			});
-			$('#barchart2').highcharts({
-				chart: {
-					type: 'column'
-				},
+			},
+			yAxis: [{
+				min: 0,
 				title: {
-					text: 'FFB Processed (Million MT)',
-					align: 'left'
-				},
-				subtitle: {
-					text: '',
-					align: 'left'
-				},
-				xAxis: {
-					categories: [2014,2015,2016]
-				},
-				yAxis: {
-					title: {
-						text:'(Million MT)',
-						align: 'high'
-					}
-				},
-				tooltip: {
-					valueSuffix: ' MT'
-				},
-				credits: {
-					enabled: false
-				},
-				series: [{
-					name: 'FFB Processed (Million MT)',
-					data: [15.82,14.79,14.83]
-				}]
-			});
+					text: 'Metric Tonnes(MT)'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'Budget',
+				color: 'rgba(165,170,217,1)',
+				data: [200000],
+				pointPadding: 0.3,
+				pointPlacement:0
+			}, {
+				name: 'Actual',
+				color: 'rgba(126,86,134,.9)',
+				data: [114000],
+				pointPadding: 0.4,
+				pointPlacement: 0
+			}]
 		});
-		$(function () {
-			Highcharts.setOptions({
-				colors: ['#f0c']
-			});
-			$('#barchart3').highcharts({
-				chart: {
-					type: 'column'
-				},
+		Highcharts.chart('barchart_1_right', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: [
+					'April'
+				]
+			},
+			yAxis: [{
+				min: 0,
 				title: {
-					text: 'FFB Yield (MT/ha)',
-					align: 'left'
-				},
-				subtitle: {
-					text: '',
-					align: 'left'
-				},
-				xAxis: {
-					categories: [2014,2015,2016]
-				},
-				yAxis: {
-					title: {
-						text:'MT/Ha',
-						align: 'high'
-					}
-				},
-				tooltip: {
-					valueSuffix: ' MT/Ha'
-				},
-				credits: {
-					enabled: false
-				},
-				series: [{
-					name: 'FFB Yield (MT/ha)',
-					data: [18.99,18.94,17.93]
-				}]
-			});
+					text: 'Metric Tonnes(MT)'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'Budget',
+				color: 'rgba(165,170,217,1)',
+				data: [3000000],
+				pointPadding: 0.3,
+				pointPlacement:0
+			}, {
+				name: 'Actual',
+				color: 'rgba(126,86,134,.9)',
+				data: [420000],
+				pointPadding: 0.4,
+				pointPlacement: 0
+			}]
 		});
-		$(function () {
-			Highcharts.setOptions({
-				colors: ['#5f3','#0ff']
-			});
-			$('#barchart4').highcharts({
-				chart: {
-					type: 'column'
-				},
+		
+		// group 2
+		Highcharts.chart('barchart_2_left', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: [
+					'April'
+				]
+			},
+			yAxis: [{
+				min: 0,
 				title: {
-					text: 'OER and KER (%)',
-					align: 'left'
-				},
-				subtitle: {
-					text: '',
-					align: 'left'
-				},
-				xAxis: {
-					categories: [2014,2015,2016]
-				},
-				yAxis: {
-					title: {
-						text:'(%)',
-						align: 'high'
-					}
-				},
-				tooltip: {
-					valueSuffix: ' %'
-				},
-				credits: {
-					enabled: false
-				},
-				series: [{
-					name: 'OER',
-					data: [20.44,21.01,20.91]
-				},{
-					name: 'KER',
-					data: [5.34,5.46,5.36]
-				}]
-			});
+					text: 'Metric Tonnes(MT)'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'Budget',
+				color: 'rgba(165,170,217,1)',
+				data: [200000],
+				pointPadding: 0.3,
+				pointPlacement:0
+			}, {
+				name: 'Actual',
+				color: 'rgba(126,86,134,.9)',
+				data: [114000],
+				pointPadding: 0.4,
+				pointPlacement: 0
+			}]
 		});
+		Highcharts.chart('barchart_2_right', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: [
+					'April'
+				]
+			},
+			yAxis: [{
+				min: 0,
+				title: {
+					text: 'Metric Tonnes(MT)'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'Budget',
+				color: 'rgba(165,170,217,1)',
+				data: [3000000],
+				pointPadding: 0.3,
+				pointPlacement:0
+			}, {
+				name: 'Actual',
+				color: 'rgba(126,86,134,.9)',
+				data: [420000],
+				pointPadding: 0.4,
+				pointPlacement: 0
+			}]
+		});
+		
+		// group 3
+		Highcharts.chart('barchart_3_left', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: [
+					'April'
+				]
+			},
+			yAxis: [{
+				min: 0,
+				title: {
+					text: 'Metric Tonnes(MT)'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'Budget',
+				color: 'rgba(165,170,217,1)',
+				data: [200000],
+				pointPadding: 0.3,
+				pointPlacement:0
+			}, {
+				name: 'Actual',
+				color: 'rgba(126,86,134,.9)',
+				data: [114000],
+				pointPadding: 0.4,
+				pointPlacement: 0
+			}]
+		});
+		Highcharts.chart('barchart_3_right', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: [
+					'April'
+				]
+			},
+			yAxis: [{
+				min: 0,
+				title: {
+					text: 'Metric Tonnes(MT)'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'Budget',
+				color: 'rgba(165,170,217,1)',
+				data: [3000000],
+				pointPadding: 0.3,
+				pointPlacement:0
+			}, {
+				name: 'Actual',
+				color: 'rgba(126,86,134,.9)',
+				data: [420000],
+				pointPadding: 0.4,
+				pointPlacement: 0
+			}]
+		});
+		
+		
 		
 		
 	});

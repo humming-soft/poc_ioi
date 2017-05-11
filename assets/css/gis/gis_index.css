@@ -174,6 +174,10 @@ overall panel
 
 */
 
+#plate_commercial div.overall div.barchart_group {
+	display: inline-block;
+}
+
 #float_plate .overall {
 	display: block;
 	position: absolute;
@@ -185,14 +189,90 @@ overall panel
 }
 
 #float_plate .barchart_group {
-	background: #333;
 	width: 32%;
-	height: 30%;
+	height: 34%;
+	background: rgba(0,0,0,.3);
 }
 
 #float_plate .barchart_group .title1 {
-	background: #f0f;
-	font-size: 1.3vw;
+	background: rgba(255,255,255,.5);
+	color: #000;
+	padding: 2px 15px;
+	font-size: 1.2vw;
+}
+
+#float_plate .barchart_group .title2 {
+	color: #ccc;
+	padding: 2px 15px;
+	font-size: .9vw;
+}
+
+#float_plate div.barchart_group div.barchart_lr {
+	display: inline-block;
+}
+
+#float_plate .barchart_group .barchart_left,
+#float_plate .barchart_group .barchart_right  {
+	width: 49%;
+	padding: 5px 15px;
+}
+#float_plate .barchart_group .barchart_left {
+}
+#float_plate .barchart_group .barchart_right {
+}
+
+
+/*barchart*/
+div.barchart_group div.barchart_lr div.barchart > div {
+	position: absolute;
+	width: 15%;
+	height: 22%;
+}
+div.barchart_group div.barchart_lr div.barchart div.highcharts-container {
+	background:none;!important;
+	z-index: 999!important;
+}
+
+
+/*status*/
+div.status_group {
+	position: absolute;
+	width: 15%;
+	top: 28%;
+	text-align: center;
+}
+div.status_group div.status {
+	display: inline-block;
+	text-align: center;
+}
+
+	div.status_group div.status_l,
+	div.status_group div.status_r {
+		background: #333;
+		width: 47%;
+	}
+
+div.status_group span {
+	display: inline-block;
+}
+
+div.status_group span.title {
+	background: #002;
+	font-size: .7vw;
+}
+div.status_group span.value {
+	background: #448;
+	font-size: 1.2vw;
+}
+
+div.status_group span.color_down_1 {
+	color: #ff0!important;
+}
+div.status_group span.color_down_2 {
+	color: #f70!important;
+}
+div.status_group span.color_down_3 {
+	color: #f05!important;
 }
 
 

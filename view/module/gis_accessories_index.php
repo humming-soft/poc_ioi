@@ -24,12 +24,119 @@
 	</div>
 	<div id="plate_commercial">
 		<div class="overall">
+			
+			<!-- -- -->
 			<div class="barchart_group barchart_group_1">
-				<div class="title1">poi</div>
-				<div class="title2">poi</div>
-				<div class="barchart">poi</div>
-				<div class="status">poi</div>
+				<div class="title1">FFB Harvest</div>
+				<div class="barchart_lr barchart_left">
+					<div class="title2">Month to Date</div>
+					<div class="barchart">
+						<div id="barchart_1_left"></div>
+					</div>
+					<div class="status_group">
+						<div class="status status_l">
+							<span class="title">Variance</span>
+							<span class="value">7%</span>
+						</div>
+						<div class="status status_r">
+							<span class="title">Trend</span>
+							<span class="value color_down_1"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="barchart_lr barchart_right">
+					<div class="title2">Year to Date</div>
+					<div class="barchart">
+						<div id="barchart_1_right"></div>
+					</div>
+					<div class="status_group">
+						<div class="status status_l">
+							<span class="title">Variance</span>
+							<span class="value">3%</span>
+						</div>
+						<div class="status status_r">
+							<span class="title">Trend</span>
+							<span class="value color_down_2"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- -- -->
+			<!-- -- -->
+			<div class="barchart_group barchart_group_2">
+				<div class="title1">CPO</div>
+				<div class="barchart_lr barchart_left">
+					<div class="title2">Month to Date</div>
+					<div class="barchart">
+						<div id="barchart_2_left"></div>
+					</div>
+					<div class="status_group">
+						<div class="status status_l">
+							<span class="title">Variance</span>
+							<span class="value">8%</span>
+						</div>
+						<div class="status status_r">
+							<span class="title">Trend</span>
+							<span class="value color_down_3"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="barchart_lr barchart_right">
+					<div class="title2">Year to Date</div>
+					<div class="barchart">
+						<div id="barchart_2_right"></div>
+					</div>
+					<div class="status_group">
+						<div class="status status_l">
+							<span class="title">Variance</span>
+							<span class="value">7%</span>
+						</div>
+						<div class="status status_r">
+							<span class="title">Trend</span>
+							<span class="value color_down_2"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- -- -->
+			<!-- -- -->
+			<div class="barchart_group barchart_group_3">
+				<div class="title1">Palm Kernel</div>
+				<div class="barchart_lr barchart_left">
+					<div class="title2">Month to Date</div>
+					<div class="barchart">
+						<div id="barchart_3_left"></div>
+					</div>
+					<div class="status_group">
+						<div class="status status_l">
+							<span class="title">Variance</span>
+							<span class="value">7%</span>
+						</div>
+						<div class="status status_r">
+							<span class="title">Trend</span>
+							<span class="value color_down_1"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="barchart_lr barchart_right">
+					<div class="title2">Year to Date</div>
+					<div class="barchart">
+						<div id="barchart_3_right"></div>
+					</div>
+					<div class="status_group">
+						<div class="status status_l">
+							<span class="title">Variance</span>
+							<span class="value">9%</span>
+						</div>
+						<div class="status status_r">
+							<span class="title">Trend</span>
+							<span class="value color_down_3"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- -- -->
+			
 			<!-- <span class="title">OVERALL HARVESTING</span>
 			<span class="content c1">
 				<span class="block_title">Total <br>Budget</span>
