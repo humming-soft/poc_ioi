@@ -192,15 +192,18 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'Estate A',
+					'2016-2017',
 				]
 			},
 			yAxis: [{
-				min: 0,
 				title: {
-					text: 'RM'
+					text: 'RM',
+					align: 'middle'
 				}
 			}],
+			rangeSelector: {
+				selected: 1
+			},
 			legend: {
 				shadow: false
 			},
@@ -219,7 +222,7 @@ $(document).ready(function(){
 			},
 			series: [{
 				name: 'Target',
-				color: '#f50',
+				color: '#2255BC',
 				data: [{
 						y:6846000,
 						// drilldown: 'b1'
@@ -228,9 +231,9 @@ $(document).ready(function(){
 				pointPlacement: -0.2,
 			}, {
 				name: 'Actual',
-				color: 'rgba(126,86,134,.9)',
+				color: '#0c9',
 				data: [{
-					y:812000,
+					y:4812000,
 					// drilldown: 'b1'
 				}],
 				pointPadding: 0.4,
@@ -279,7 +282,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'Estate A',
+					'2016-2017',
 				]
 			},
 			yAxis: [{
@@ -303,13 +306,13 @@ $(document).ready(function(){
 			},
 			series: [{
 				name: 'Target',
-				color: '#006fff',
+				color: '#f50',
 				data: [4000],
 				pointPadding: 0.3,
 				pointPlacement: -0.2
 			}, {
 				name: 'Actual',
-				color: '#00f',
+				color: '#0c9',
 				data: [3580],
 				pointPadding: 0.4,
 				pointPlacement: -0.2

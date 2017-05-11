@@ -1415,22 +1415,30 @@ div.portlet_hi div.block_plate div.block span.title {
 }
 
 
-
-div.portlet_hi div.block_plate div.block.block_a1 span.number {
-	border-top: 3px solid #000;
+div.portlet_hi div.block_plate div.block.block_a1 span.number1 {
+	 border-top: 3px solid #2255BC;
+ }
+div.portlet_hi div.block_plate div.block.block_a1 span.number2 {
+	border-top: 3px solid #0c9;
+}
+div.portlet_hi div.block_plate div.block.block_a1 span.number3 {
+	border-top: 3px solid #0D8ABC;
 }
 div.portlet_hi div.block_plate div.block.block_a2 span.number {
-	border-top: 3px solid #f0f;
+	border-top: 3px solid #f50;
 }
 div.portlet_hi div.block_plate div.block.block_a3 span.number {
-	border-top: 3px solid #00f;
+	border-top: 3px solid #0c9;
 }
 
 div.portlet_hi div.block_plate div.block.block_b2 span.number {
-	border-top: 3px solid #f50;
+	border-top: 3px solid #f0f;
 }
 div.portlet_hi div.block_plate div.block.block_b3 span.number {
-	border-top: 3px solid #0c9;
+	border-top: 3px solid #00f;
+}
+div.portlet_hi div.block_plate div.block.block_b4 span.number {
+	border-top: 3px solid #49497b;
 }
 
 
@@ -1513,6 +1521,7 @@ div.psd_data_type3 {
 	padding: 5px 10px !important;
 	background: rgba(255,255,255,.30);
 }
+
 .m-t-15{
 	margin-top: 15px;
 }
@@ -1530,8 +1539,19 @@ div.psd_data_type3 {
 }
 
 
-
-
+div.portlet_table table {
+	font-size: .9em;
+}
+table thead {
+	background: #000;
+}
+div.portlet_table table .col_separation {
+	border-right: 2px solid #223;
+	text-align: center;
+}
+div.portlet_table table tbody td {
+	border-bottom: 1px solid #669 !important;
+}
 
 
 
