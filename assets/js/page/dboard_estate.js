@@ -419,7 +419,11 @@ $(document).ready(function(){
 	});
 	Highcharts.chart('donut', {
 		chart: {
-			type: 'pie'
+			type: 'pie',
+			options3d: {
+				enabled: true,
+				alpha: 45
+			}
 		},
 		title: {
 			text: ''
@@ -432,7 +436,8 @@ $(document).ready(function(){
 		plotOptions: {
 			pie: {
 				shadow: false,
-				cursor: 'pointer'
+				cursor: 'pointer',
+				depth: 45
 				// dataLabels: {
 				// 	distance: 0,
 				// 	overflow: "justify"

@@ -28,7 +28,8 @@
 <!-- highcharts -->
 <!--<script type="text/javascript" src="../assets/package/highcharts/highcharts.js"></script>-->
 <script type="text/javascript" src="../assets/package/highcharts/highcharts-5x.js"></script>
-<script type="text/javascript" src="../assets/package/highcharts/highcharts-3d.js"></script>
+<!--<script type="text/javascript" src="../assets/package/highcharts/highcharts-3d.js"></script>-->
+<script type="text/javascript" src="../assets/package/highcharts/highcharts-3d-5x.js"></script>
 <script type="text/javascript" src="../assets/package/highcharts/highcharts-more.js"></script>
 <script type="text/javascript" src="../assets/package/highcharts/highcharts-drilldown.js"></script>
 <script type="text/javascript" src="../assets/package/highcharts/theme.js"></script>
