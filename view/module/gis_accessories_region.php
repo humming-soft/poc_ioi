@@ -16,8 +16,6 @@
 <div class="col-md-3">
 	<div class="button_set">
 		<div class="btn-group" role="group" aria-label="...">
-			<button type="button" class="btn btn-primary">Summary</button>
-			<button type="button" class="btn btn-primary">Issue</button>
 		</div>
 	</div>
 </div>
