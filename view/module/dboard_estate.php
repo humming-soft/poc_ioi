@@ -27,12 +27,25 @@
 							<div class="row">
 								<?php include 'procurement/portlet/info_station.html'; ?>
 								<?php include 'procurement/portlet/progress_trend.html'; ?>
-								<?php include 'procurement/portlet/estate_age_profile.html'; ?>
 							</div>
 						</div>
 						<div class="col-lg-9 col-md-8">
 							<div class="row">
 								<?php include 'procurement/portlet/harvesting_info.html'; ?>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="row">
+								<?php include 'procurement/portlet/estate_age_profile.html'; ?>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="row">
 								<?php include 'procurement/portlet/estate_productivity.html'; ?>
 							</div>
 						</div>

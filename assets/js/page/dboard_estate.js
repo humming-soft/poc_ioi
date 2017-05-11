@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 	//.portlet_info
 	
-	$('.portlet_info span.info_title').text('ROYAL PALM 5 ESTATE');
+	$('.portlet_info span.info_title').text('ROYAL PALM ESTATE');
 	$('.portlet_info span.info_subtitle').text('Tanah Raja');
 	
 	
@@ -181,9 +181,13 @@ $(document).ready(function(){
 			}, {
 				name: 'Actual',
 				data: [790452,925548,1086540,1133808,1382004,1472640,1530204,1444560,1295424,1258040]
-			}]
+			}],
+			credits: {
+				enabled: false
+			}
 		});
-		$('#highcharts-ht1').highcharts({
+
+		Highcharts.chart('highcharts-ht1', {
 			chart: {
 				type: 'column'
 			},
@@ -191,14 +195,15 @@ $(document).ready(function(){
 				text: 'Budget 2016-2017'
 			},
 			xAxis: {
-				categories: [
-					'2016-2017',
-				]
+				type: 'category'
 			},
 			yAxis: [{
 				title: {
 					text: 'RM',
 					align: 'middle'
+				},
+				labels: {
+					format: '{value}'
 				}
 			}],
 			rangeSelector: {
@@ -214,18 +219,18 @@ $(document).ready(function(){
 				column: {
 					grouping: false,
 					shadow: false,
-					borderWidth: 3
+					borderWidth: 1
 				},
 				series: {
-					borderColor: '#303030'
+					borderColor: '#fff'
 				}
 			},
 			series: [{
 				name: 'Target',
 				color: '#2255BC',
 				data: [{
-						y:6846000,
-						// drilldown: 'b1'
+					name: '2016-2017',
+						y:6846000
 					}],
 				pointPadding: 0.3,
 				pointPlacement: -0.2,
@@ -233,44 +238,81 @@ $(document).ready(function(){
 				name: 'Actual',
 				color: '#0c9',
 				data: [{
+					name: '2016-2017',
 					y:4812000,
-					// drilldown: 'b1'
+					 drilldown: 'b1'
 				}],
 				pointPadding: 0.4,
 				pointPlacement: -0.2
-			}]
-			// drilldown: {
-			// 	series: [{
-			// 		name: 'Microsoft Internet Explorer',
-			// 		id: 'b1',
-			// 		data: [
-			// 			[
-			// 				'v11.0',
-			// 				24.13
-			// 			],
-			// 			[
-			// 				'v8.0',
-			// 				17.2
-			// 			],
-			// 			[
-			// 				'v9.0',
-			// 				8.11
-			// 			],
-			// 			[
-			// 				'v10.0',
-			// 				5.33
-			// 			],
-			// 			[
-			// 				'v6.0',
-			// 				1.06
-			// 			],
-			// 			[
-			// 				'v7.0',
-			// 				0.5
-			// 			]
-			// 		]
-			// 	}]
-			// }
+			}],
+			drilldown: {
+				drillUpButton: {
+					relativeTo: 'spacingBox',
+					position: {
+						y: 0,
+						x: 0
+					},
+					theme: {
+						fill: 'white',
+						'stroke-width': 1,
+						stroke: 'silver',
+						r: 0,
+						states: {
+							hover: {
+								fill: '#bada55'
+							},
+							select: {
+								stroke: '#039',
+								fill: '#bada55'
+							}
+						}
+					}
+
+				},
+				series: [{
+					name: 'Actual',
+					id: 'b1',
+					data: [
+						['July', 23400 ],
+						[
+							'August',
+							23500
+						],
+						[
+							'September',
+							21400
+						],
+						[
+							'October',
+							23470
+						],
+						[
+							'November',
+							28400
+						],
+						[
+							'December',
+							33400
+						],
+						[
+							'January',
+							53400
+						],
+						[
+							'February',
+							21000
+						],
+						[
+							'March',
+							20900
+						]
+					]
+				},
+				]
+			},
+			credits: {
+				enabled: false
+			}
 		});
 
 		$('#highcharts-ht2').highcharts({
@@ -289,6 +331,9 @@ $(document).ready(function(){
 				min: 0,
 				title: {
 					text: 'Metric Ton'
+				},
+				labels: {
+					format: '{value}'
 				}
 			}],
 			legend: {
@@ -316,7 +361,10 @@ $(document).ready(function(){
 				data: [3580],
 				pointPadding: 0.4,
 				pointPlacement: -0.2
-			}]
+			}],
+			credits: {
+				enabled: false
+			}
 		});
 
 	});
@@ -337,7 +385,12 @@ $(document).ready(function(){
 		},
 		plotOptions: {
 			pie: {
-				shadow: false
+				shadow: false,
+				cursor: 'pointer'
+				// dataLabels: {
+				// 	distance: 0,
+				// 	overflow: "justify"
+				// }
 			}
 		},
 		tooltip: {
@@ -348,7 +401,7 @@ $(document).ready(function(){
 			{
 			name: 'Versions',
 			data: [["Immature",22],["Young (4-5 years)",21],["Prime (10-20 Years)",14],["Old (21-25 Years)",17],[">25 Years",26]],
-			size: '70%',
+			size: '80%',
 			innerSize: '60%',
 			dataLabels: {
 				formatter: function () {
@@ -356,7 +409,10 @@ $(document).ready(function(){
 					return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
 				}
 			}
-		}]
+		}],
+		credits: {
+			enabled: false
+		}
 	});
 
 	$(function () {
@@ -412,7 +468,10 @@ $(document).ready(function(){
 					symbol: 'diamond'
 				},
 				data: [1300,1400,1600,1800,2000,3000]
-			}]
+			}],
+			credits: {
+				enabled: false
+			}
 		});
 	});
 	Highcharts.chart('dpie_chart_1', {
@@ -503,7 +562,7 @@ $(document).ready(function(){
 		}],
 		credits: {
 			enabled: false
-		},
+		}
 	});
 
 
