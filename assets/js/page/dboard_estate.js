@@ -12,7 +12,7 @@ $(document).ready(function(){
 	//.portlet_info
 	
 	$('.portlet_info span.info_title').text('ROYAL PALM ESTATE');
-	$('.portlet_info span.info_subtitle').text('Tanah Raja');
+	$('.portlet_info span.info_subtitle').text('Lahad Datu');
 	
 	
 	// ------------------------------
@@ -192,7 +192,7 @@ $(document).ready(function(){
 				type: 'column'
 			},
 			title: {
-				text: 'Budget 2016-2017'
+				text: 'Budget'
 			},
 			xAxis: {
 				type: 'category'
@@ -213,7 +213,8 @@ $(document).ready(function(){
 				shadow: false
 			},
 			tooltip: {
-				shared: true
+				shared: true,
+				valuePrefix: 'RM '
 			},
 			plotOptions: {
 				column: {
@@ -229,21 +230,21 @@ $(document).ready(function(){
 				name: 'Target',
 				color: '#2255BC',
 				data: [{
-					name: '2016-2017',
+					name: '2016',
 						y:6846000
 					}],
 				pointPadding: 0.3,
-				pointPlacement: -0.2,
+				pointPlacement: 0,
 			}, {
 				name: 'Actual',
 				color: '#0c9',
 				data: [{
-					name: '2016-2017',
+					name: '2016',
 					y:4812000,
 					 drilldown: 'b1'
 				}],
 				pointPadding: 0.4,
-				pointPlacement: -0.2
+				pointPlacement: 0
 			}],
 			drilldown: {
 				drillUpButton: {
@@ -314,23 +315,22 @@ $(document).ready(function(){
 				enabled: false
 			}
 		});
-
 		$('#highcharts-ht2').highcharts({
 			chart: {
 				type: 'column'
 			},
 			title: {
-				text: 'Harvest 2016-2017'
+				text: 'Harvest'
 			},
 			xAxis: {
 				categories: [
-					'2016-2017',
+					'2016',
 				]
 			},
 			yAxis: [{
 				min: 0,
 				title: {
-					text: 'Metric Ton'
+					text: 'Metric Ton (MT)'
 				},
 				labels: {
 					format: '{value}'
@@ -340,7 +340,8 @@ $(document).ready(function(){
 				shadow: false
 			},
 			tooltip: {
-				shared: true
+				shared: true,
+				valueSuffix: ' MT'
 			},
 			plotOptions: {
 				column: {
@@ -354,18 +355,63 @@ $(document).ready(function(){
 				color: '#f50',
 				data: [4000],
 				pointPadding: 0.3,
-				pointPlacement: -0.2
+				pointPlacement: 0
 			}, {
 				name: 'Actual',
 				color: '#0c9',
 				data: [3580],
 				pointPadding: 0.4,
-				pointPlacement: -0.2
+				pointPlacement: 0
 			}],
 			credits: {
 				enabled: false
 			}
 		});
+		$('#highcharts-ht3').highcharts({
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: 'Total FFB Harvested'
+			},
+			xAxis: {
+				categories: [
+					'2016',
+				]
+			},
+			yAxis: [{
+				min: 0,
+				title: {
+					text: 'Percentage (%)'
+				},
+				labels: {
+					format: '{value}'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true,
+				valueSuffix: ' %'
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'Total FFB',
+				color: '#0f0',
+				data: [68]
+			}],
+			credits: {
+				enabled: false
+			}
+		});
+		
 
 	});
 	Highcharts.setOptions({
