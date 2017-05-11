@@ -188,19 +188,22 @@ $(document).ready(function(){
 				type: 'column'
 			},
 			title: {
-				text: 'Budget 2016'
+				text: 'Budget 2016-2017'
 			},
 			xAxis: {
 				categories: [
-					'Estate A',
+					'2016-2017',
 				]
 			},
 			yAxis: [{
-				min: 0,
 				title: {
-					text: 'RM'
+					text: 'RM',
+					align: 'middle'
 				}
 			}],
+			rangeSelector: {
+				selected: 1
+			},
 			legend: {
 				shadow: false
 			},
@@ -219,17 +222,55 @@ $(document).ready(function(){
 			},
 			series: [{
 				name: 'Target',
-				color: '#f50',
-				data: [6846000],
+				color: '#2255BC',
+				data: [{
+						y:6846000,
+						// drilldown: 'b1'
+					}],
 				pointPadding: 0.3,
-				pointPlacement: -0.2
+				pointPlacement: -0.2,
 			}, {
 				name: 'Actual',
-				color: 'rgba(126,86,134,.9)',
-				data: [812000],
+				color: '#0c9',
+				data: [{
+					y:4812000,
+					// drilldown: 'b1'
+				}],
 				pointPadding: 0.4,
 				pointPlacement: -0.2
 			}]
+			// drilldown: {
+			// 	series: [{
+			// 		name: 'Microsoft Internet Explorer',
+			// 		id: 'b1',
+			// 		data: [
+			// 			[
+			// 				'v11.0',
+			// 				24.13
+			// 			],
+			// 			[
+			// 				'v8.0',
+			// 				17.2
+			// 			],
+			// 			[
+			// 				'v9.0',
+			// 				8.11
+			// 			],
+			// 			[
+			// 				'v10.0',
+			// 				5.33
+			// 			],
+			// 			[
+			// 				'v6.0',
+			// 				1.06
+			// 			],
+			// 			[
+			// 				'v7.0',
+			// 				0.5
+			// 			]
+			// 		]
+			// 	}]
+			// }
 		});
 
 		$('#highcharts-ht2').highcharts({
@@ -237,11 +278,11 @@ $(document).ready(function(){
 				type: 'column'
 			},
 			title: {
-				text: 'Harvest 2016'
+				text: 'Harvest 2016-2017'
 			},
 			xAxis: {
 				categories: [
-					'Estate A',
+					'2016-2017',
 				]
 			},
 			yAxis: [{
@@ -265,13 +306,13 @@ $(document).ready(function(){
 			},
 			series: [{
 				name: 'Target',
-				color: '#006fff',
+				color: '#f50',
 				data: [4000],
 				pointPadding: 0.3,
 				pointPlacement: -0.2
 			}, {
 				name: 'Actual',
-				color: '#00f',
+				color: '#0c9',
 				data: [3580],
 				pointPadding: 0.4,
 				pointPlacement: -0.2
@@ -307,8 +348,8 @@ $(document).ready(function(){
 			{
 			name: 'Versions',
 			data: [["Immature",22],["Young (4-5 years)",21],["Prime (10-20 Years)",14],["Old (21-25 Years)",17],[">25 Years",26]],
-			size: '100%',
-			innerSize: '70%',
+			size: '70%',
+			innerSize: '60%',
 			dataLabels: {
 				formatter: function () {
 					// display only if larger than 1
@@ -359,14 +400,14 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
-				name: 'Financial Year 2016',
+				name: 'Financial Year 2015-2016',
 				marker: {
 					symbol: 'square'
 				},
 				data: [1500,1800,2300,2500,2800,3000,3100,3400,3400,3800,4000,4100]
 
 			}, {
-				name: 'Financial Year 2017',
+				name: 'Financial Year 2016-2017',
 				marker: {
 					symbol: 'diamond'
 				},
@@ -374,5 +415,96 @@ $(document).ready(function(){
 			}]
 		});
 	});
+	Highcharts.chart('dpie_chart_1', {
+		chart: {
+			plotBackgroundColor: null,
+			plotBorderWidth: 0,
+			plotShadow: false,
+			margin: [0, 0, 0, 0],
+			spacingTop: 0,
+			spacingBottom: 0,
+			spacingLeft: 0,
+			spacingRight: 0
+			//height: 250
+		},
+		title: {
+			text: 'Harvesting Rounds',
+			// style: {
+			// 	color: '#9EDD2E',
+			// 	fontSize: '150%',
+			// 	fontWeight: 'bold'
+			// },
+			// align: 'center',
+			// verticalAlign: 'middle',
+			// y: 10
+		},
+		plotOptions: {
+			pie: {
+				dataLabels: {
+					enabled: false,
+					distance: -50,
+
+					style: {
+						fontWeight: 'bold',
+						color: 'white',
+						textShadow: '0px 1px 2px black'
+					}
+				},
+				startAngle: 0,
+				endAngle: 360,
+				center: ['50%', '50%'],
+				size: '100%'
+			}
+		},
+		tooltip:{
+			enabled:true,
+			formatter: function() { return '<b>'+this.point.name+'</b> :'+ this.point.y +' Round(s)' ; }
+		},
+		// tooltip: {
+		// 	enabled: true,
+		// 	formatter: function (evt) {
+		// 		var current = this.series.data;
+		// 		//console.log(current[current.length - 1].category);
+		// 		var tooltip;
+		// 		tooltip = '<span style="color:#EBFF00">' + this.series.name + ':)</span>: <b>' + current[current.length - 1].y + '%</b><br/>';
+		// 		return tooltip;
+		// 	}
+		// },
+		series: [{
+			type: 'pie',
+			size: '65%',
+			innerSize: '85%',
+			style: {
+				color: 'white'
+			},
+			data: [
+				{
+					name: 'Current',
+					y: 3,
+					color: '#0fa'
+				},
+				{
+					name: 'Remaining',
+					y: (5-3),
+					color: 'rgba(0,0,0,0.2)'
+				},
+			]
+		},{
+			type: 'pie',
+			size: '80%',
+			innerSize:  '85%',
+			data: [
+				{
+					name: 'Total',
+					y: 5,
+					color: '#09f'
+				}
+			]
+		}],
+		credits: {
+			enabled: false
+		},
+	});
+
 
 });	

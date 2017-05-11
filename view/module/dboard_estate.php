@@ -22,14 +22,15 @@
 				</div>
 				
 				<div class="col-md-12">
-					<div class="row1">
-						<div class="col-md-3">
+					<div class="row">
+						<div class="col-lg-3 col-md-4">
 							<div class="row">
 								<?php include 'procurement/portlet/info_station.html'; ?>
+								<?php include 'procurement/portlet/progress_trend.html'; ?>
 								<?php include 'procurement/portlet/estate_age_profile.html'; ?>
 							</div>
 						</div>
-						<div class="col-md-9">
+						<div class="col-lg-9 col-md-8">
 							<div class="row">
 								<?php include 'procurement/portlet/harvesting_info.html'; ?>
 								<?php include 'procurement/portlet/estate_productivity.html'; ?>
@@ -37,7 +38,11 @@
 						</div>
 					</div>
 				</div>
-			
+				<div class="col-md-12">
+					<div class="row">
+						<?php include 'procurement/portlet/harvest_standards.html'; ?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
