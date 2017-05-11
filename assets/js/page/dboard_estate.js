@@ -592,7 +592,7 @@ $(document).ready(function(){
 					name: 'Remaining',
 					y: (5-3),
 					color: 'rgba(0,0,0,0.2)'
-				},
+				}
 			]
 		},{
 			type: 'pie',
