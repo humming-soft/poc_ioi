@@ -4,7 +4,6 @@ $(document).ready(function(){
 	$('.plate_vector_map_aek_selabat').load('../assets/svg/plate_vector_map_group.svg',function(){
 		
 		
-		
 		// vector_track
 		var json = [ 
 			{"vector_track":"legend_v_track_1","vector_status":"0","url":""},
