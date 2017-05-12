@@ -230,7 +230,7 @@ $(document).ready(function(){
 				name: 'Target',
 				color: '#2255BC',
 				data: [{
-					name: '2016',
+					name: '2016-2017',
 						y:6846000
 					}],
 				pointPadding: 0.3,
@@ -239,7 +239,7 @@ $(document).ready(function(){
 				name: 'Actual',
 				color: '#0c9',
 				data: [{
-					name: '2016',
+					name: '2016-2017',
 					y:4812000,
 					 drilldown: 'b1'
 				}],
@@ -274,37 +274,44 @@ $(document).ready(function(){
 					name: 'Actual',
 					id: 'b1',
 					data: [
-						['July', 23400 ],
 						[
-							'August',
+							'Jul 16',
+							23400
+						],
+						[
+							'Aug 16',
 							23500
 						],
 						[
-							'September',
+							'Sept 16',
 							21400
 						],
 						[
-							'October',
+							'Oct 16',
 							23470
 						],
 						[
-							'November',
+							'Nov 16',
 							28400
 						],
 						[
-							'December',
+							'Dec 16',
 							33400
 						],
 						[
-							'January',
+							'Jan 17',
 							53400
 						],
 						[
-							'February',
+							'Feb 17',
 							21000
 						],
 						[
-							'March',
+							'Mar 17',
+							20900
+						],
+						[
+							'Apr 17',
 							20900
 						]
 					]
@@ -403,7 +410,7 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
-				name: 'Total FFB',
+				name: 'Variance',
 				color: '#0f0',
 				data: [68]
 			}],
