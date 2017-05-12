@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	
-	
+
+	$('.blink').blink();
 	
 	
 	// ------------------------------
@@ -475,12 +475,9 @@ $(document).ready(function(){
 
 	$(function () {
 		Highcharts.setOptions({
-			colors: ['#09f','#0fa']
+			colors: ['#09f','#0fa', '#90ed7d','#f45b5b','rgb(25,178,255)']
 		});
 		Highcharts.chart('line_chart_1', {
-			chart: {
-				type: 'line'
-			},
 			title: {
 				text: ''
 			},
@@ -514,6 +511,7 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
+				type: 'line',
 				name: 'Financial Year 2015-2016',
 				marker: {
 					symbol: 'square'
@@ -521,12 +519,26 @@ $(document).ready(function(){
 				data: [1500,1800,2300,2500,2800,3000,3100,3400,3400,3800,4000,4100]
 
 			}, {
+				type: 'line',
 				name: 'Financial Year 2016-2017',
 				marker: {
 					symbol: 'diamond'
 				},
-				data: [1300,1400,1600,1800,2000,3000]
-			}],
+				data: [1300,1400,1600,1800,2000,3000,3200,3400,3450, 3350]
+			}, {
+					type: 'column',
+					name: 'Week 1',
+					data: [1100, 1200, 1200, 1300, 1300 ,1290, 1250, 900, 1200, 1950]
+			},{
+				type: 'column',
+				name: 'Week 2',
+				data: [1200, 1320, 1390, 1500, 1400, 1300, 1000, 1290, 1430, 1960]
+			},{
+				type: 'column',
+				name: 'Week 3',
+				data: [1500, 1210, 1410, 1800, 1600, 1750, 1320, 1320, 1600]
+			}
+			],
 			credits: {
 				enabled: false
 			}
