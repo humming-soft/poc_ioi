@@ -69,7 +69,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'April'
+					'APR-16','APR-17'
 				]
 			},
 			yAxis: [{
@@ -78,9 +78,6 @@ $(document).ready(function(){
 					text: 'Metric Tonnes(MT)'
 				}
 			}],
-			legend: {
-				shadow: false
-			},
 			tooltip: {
 				shared: true
 			},
@@ -92,15 +89,24 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
+				showInLegend:false,
 				name: 'Budget',
-				color: 'rgba(165,170,217,1)',
-				data: [200000],
+				color: '#09f',
+				data: [250000,260000],
+				pointPadding: 0.2,
+				pointPlacement: 0
+			}, {
+				showInLegend:false,
+				name: 'Target',
+				color: '#0ff',
+				data: [200000,190000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
+				showInLegend:false,
 				name: 'Actual',
-				color: 'rgba(126,86,134,.9)',
-				data: [114000],
+				color: '#c0c',
+				data: [114000,127000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]
@@ -114,7 +120,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'April'
+					'2016','2017'
 				]
 			},
 			yAxis: [{
@@ -123,9 +129,6 @@ $(document).ready(function(){
 					text: 'Metric Tonnes(MT)'
 				}
 			}],
-			legend: {
-				shadow: false
-			},
 			tooltip: {
 				shared: true
 			},
@@ -137,15 +140,24 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
+				showInLegend:false,
 				name: 'Budget',
-				color: 'rgba(165,170,217,1)',
-				data: [3000000],
+				color: '#09f',
+				data: [3200000,3600000],
+				pointPadding: 0.2,
+				pointPlacement: 0
+			}, {
+				showInLegend:false,
+				name: 'Target',
+				color: '#0ff',
+				data: [3000000,3400000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
+				showInLegend:false,
 				name: 'Actual',
-				color: 'rgba(126,86,134,.9)',
-				data: [420000],
+				color: '#c0c',
+				data: [420000,450000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]
@@ -161,7 +173,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'April'
+					'APR-16','APR-17'
 				]
 			},
 			yAxis: [{
@@ -170,9 +182,6 @@ $(document).ready(function(){
 					text: 'Metric Tonnes(MT)'
 				}
 			}],
-			legend: {
-				shadow: false
-			},
 			tooltip: {
 				shared: true
 			},
@@ -184,15 +193,24 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
+				showInLegend:false,
 				name: 'Budget',
-				color: 'rgba(165,170,217,1)',
-				data: [200000],
+				color: '#09f',
+				data: [250000,260000],
+				pointPadding: 0.2,
+				pointPlacement: 0
+			}, {
+				showInLegend:false,
+				name: 'Target',
+				color: '#0ff',
+				data: [200000,190000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
+				showInLegend:false,
 				name: 'Actual',
-				color: 'rgba(126,86,134,.9)',
-				data: [114000],
+				color: '#c0c',
+				data: [114000,127000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]
@@ -206,7 +224,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'April'
+					'2016','2017'
 				]
 			},
 			yAxis: [{
@@ -215,9 +233,6 @@ $(document).ready(function(){
 					text: 'Metric Tonnes(MT)'
 				}
 			}],
-			legend: {
-				shadow: false
-			},
 			tooltip: {
 				shared: true
 			},
@@ -229,15 +244,24 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
+				showInLegend:false,
 				name: 'Budget',
-				color: 'rgba(165,170,217,1)',
-				data: [3000000],
+				color: '#09f',
+				data: [3200000,3600000],
+				pointPadding: 0.2,
+				pointPlacement: 0
+			}, {
+				showInLegend:false,
+				name: 'Target',
+				color: '#0ff',
+				data: [3000000,3400000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
+				showInLegend:false,
 				name: 'Actual',
-				color: 'rgba(126,86,134,.9)',
-				data: [420000],
+				color: '#c0c',
+				data: [420000,450000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]
@@ -253,7 +277,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'April'
+					'APR-16','APR-17'
 				]
 			},
 			yAxis: [{
@@ -262,9 +286,6 @@ $(document).ready(function(){
 					text: 'Metric Tonnes(MT)'
 				}
 			}],
-			legend: {
-				shadow: false
-			},
 			tooltip: {
 				shared: true
 			},
@@ -276,15 +297,24 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
+				showInLegend:false,
 				name: 'Budget',
-				color: 'rgba(165,170,217,1)',
-				data: [200000],
+				color: '#09f',
+				data: [250000,260000],
+				pointPadding: 0.2,
+				pointPlacement: 0
+			}, {
+				showInLegend:false,
+				name: 'Target',
+				color: '#0ff',
+				data: [200000,190000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
+				showInLegend:false,
 				name: 'Actual',
-				color: 'rgba(126,86,134,.9)',
-				data: [114000],
+				color: '#c0c',
+				data: [114000,127000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]
@@ -298,7 +328,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'April'
+					'2016','2017'
 				]
 			},
 			yAxis: [{
@@ -307,9 +337,6 @@ $(document).ready(function(){
 					text: 'Metric Tonnes(MT)'
 				}
 			}],
-			legend: {
-				shadow: false
-			},
 			tooltip: {
 				shared: true
 			},
@@ -321,15 +348,24 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
+				showInLegend:false,
 				name: 'Budget',
-				color: 'rgba(165,170,217,1)',
-				data: [3000000],
+				color: '#09f',
+				data: [3200000,3600000],
+				pointPadding: 0.2,
+				pointPlacement: 0
+			}, {
+				showInLegend:false,
+				name: 'Target',
+				color: '#0ff',
+				data: [3000000,3400000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
+				showInLegend:false,
 				name: 'Actual',
-				color: 'rgba(126,86,134,.9)',
-				data: [420000],
+				color: '#c0c',
+				data: [420000,450000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]

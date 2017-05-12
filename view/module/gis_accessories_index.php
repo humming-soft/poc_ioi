@@ -5,7 +5,7 @@
 		</nav>
 	</div>
 	<div class="title">
-		Overall
+		Overall Performance
 	</div>
 </div>
 <div class="col-md-5"></div>
@@ -26,8 +26,24 @@
 		<div class="overall">
 			
 			<!-- -- -->
+			<div class="legend">
+				<div class="budget">
+					<span class="icon"><i class="fa fa-circle" aria-hidden="true"></i></span>
+					<span class="text"> Budget</span>
+				</div>
+				<div class="target">
+					<span class="icon"><i class="fa fa-circle" aria-hidden="true"></i></span>
+					<span class="text"> Target</span>
+				</div>
+				<div class="actual">
+					<span class="icon"><i class="fa fa-circle" aria-hidden="true"></i></span>
+					<span class="text"> Actual</span>
+				</div>
+			</div>
+			<!-- -- -->
+			<!-- -- -->
 			<div class="barchart_group barchart_group_1">
-				<div class="title1">FFB Harvest</div>
+				<div class="title1">FFB Harvest<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></div>
 				<div class="barchart_lr barchart_left">
 					<div class="title2">Month to Date</div>
 					<div class="barchart">
@@ -64,7 +80,7 @@
 			<!-- -- -->
 			<!-- -- -->
 			<div class="barchart_group barchart_group_2">
-				<div class="title1">CPO</div>
+				<div class="title1">CPO<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></div>
 				<div class="barchart_lr barchart_left">
 					<div class="title2">Month to Date</div>
 					<div class="barchart">
@@ -101,7 +117,7 @@
 			<!-- -- -->
 			<!-- -- -->
 			<div class="barchart_group barchart_group_3">
-				<div class="title1">Palm Kernel</div>
+				<div class="title1">Palm Kernel<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></div>
 				<div class="barchart_lr barchart_left">
 					<div class="title2">Month to Date</div>
 					<div class="barchart">
@@ -133,6 +149,13 @@
 							<span class="value color_down_3"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
 						</div>
 					</div>
+				</div>
+			</div>
+			<!-- -- -->
+			<!-- -- -->
+			<div class="portlet_total_planted">
+				<div class="text">
+					Total Planted : 20,000 Hectar
 				</div>
 			</div>
 			<!-- -- -->
