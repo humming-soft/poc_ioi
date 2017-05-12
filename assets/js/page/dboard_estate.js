@@ -1,62 +1,62 @@
 $(document).ready(function(){
-	
-	
-	
-	
+
+	$('.blink').blink();
+
+
 	// ------------------------------
 	//
 	// block_info
 	//
 	// ------------------------------
-	
+
 	//.portlet_info
-	
+
 	$('.portlet_info span.info_title').text('ROYAL PALM ESTATE');
 	$('.portlet_info span.info_subtitle').text('Lahad Datu');
-	
-	
+
+
 	// ------------------------------
 	//
 	// info
 	//
 	// ------------------------------
-	
+
 	//.portlet_sbks_progress
-	
+
 	$('.portlet_sbks_progress div.data1 span.item_value').text('2002');
 	// $('.portlet_sbks_progress div.data2 span.item_value').text('1,258,040 kg');
 	// $('.portlet_sbks_progress div.data3 span.item_value').text('1,219,340 kg');
 	$('.portlet_sbks_progress div.data2 span.item_value').text('8,580.40 MT');
 	$('.portlet_sbks_progress div.data3 span.item_value').text('8,193.40 MT');
-	
-	
+
+
 	// ------------------------------
 	//
 	// harvesting
 	//
 	// ------------------------------
-	
+
 	//.portlet_keydates
-	
+
 	$('.pbn_harvesting div.plate span.number').text('199,480kg');
 	$('.pbn_loosefruit div.plate span.number').text('4,220');
 	$('.pbn_paid div.plate span.number').text('194,660kg');
 	$('.pbn_variance div.plate span.number').text('4,820kg');
 	$('.pbn_ffb div.plate span.number').text('203,700kg');
-	
-	
+
+
 	// ------------------------------
 	//
 	// harvesting_map
 	//
 	// ------------------------------
-	
+
 	harvesting_map_data = [
 		{"hmd_date":"6 Nov 2016","hmd_u":"0","hmd_ur":"0","hmd_or":"0","hmd_r":"119","hmd_d":"0","hmd_h":"119","hmd_lf":"1"},
 		{"hmd_date":"22 Nov 2016","hmd_u":"0","hmd_ur":"0","hmd_or":"0","hmd_r":"174","hmd_d":"0","hmd_h":"174","hmd_lf":"5"},
 		{"hmd_date":"31 Nov 2016","hmd_u":"0","hmd_ur":"0","hmd_or":"0","hmd_r":"117","hmd_d":"0","hmd_h":"117","hmd_lf":"3"}
 	]
-	
+
 	for (var i = 0; i < harvesting_map_data.length; i++) {
 		var ii = harvesting_map_data[i];
 		hmd_val_hmd_date = ii.hmd_date;
@@ -67,51 +67,51 @@ $(document).ready(function(){
 		hmd_val_hmd_d = ii.hmd_d;
 		hmd_val_hmd_h = ii.hmd_h;
 		hmd_val_hmd_lf = ii.hmd_lf;
-		
+
 		$('.portlet_harvest_map_aa table tbody').append('<tr><td>'+hmd_val_hmd_date+'</td><td class="col_blk_01"><span>'+hmd_val_hmd_u+'</span></td><td class="col_blk_02"><span>'+hmd_val_hmd_ur+'</span></td><td class="col_blk_03"><span>'+hmd_val_hmd_or+'</span></td><td class="col_blk_04"><span>'+hmd_val_hmd_r+'</span></td><td class="col_blk_05"><span>'+hmd_val_hmd_d+'</span></td><td class="col_blk_06"><span>'+hmd_val_hmd_h+'</span></td></tr>');
 		$('.portlet_harvest_map_ab table tbody').append('<tr><td>'+hmd_val_hmd_date+'</td><td class="col_blk_07"><span>'+hmd_val_hmd_lf+'</span></td></tr>');
 		$('.portlet_harvest_map_ac table tbody').append('<tr><td>'+hmd_val_hmd_date+'</td><td class="col_blk_04"><span>'+hmd_val_hmd_r+'</span></td></tr>');
 		$('.portlet_harvest_map_ad table tbody').append('<tr><td>'+hmd_val_hmd_date+'</td><td class="col_blk_01"><span>'+hmd_val_hmd_u+'</span></td><td class="col_blk_02"><span>'+hmd_val_hmd_ur+'</span></td><td class="col_blk_03"><span>'+hmd_val_hmd_or+'</span></td><td class="col_blk_05"><span>'+hmd_val_hmd_d+'</span></td><td class="col_blk_07"><span>'+hmd_val_hmd_lf+'</span></td></tr>');
 		$('.portlet_harvest_map_ae table tbody').append('<tr><td>'+hmd_val_hmd_date+'</td><td class="col_blk_06"><span>'+hmd_val_hmd_h+'</span></td><td class="col_blk_07"><span>'+hmd_val_hmd_lf+'</span></td></tr>');
-		
+
 	};
-	
+
 	// ------------------------------
 	//
 	// ffb_detail
 	//
 	// ------------------------------
-	
+
 	ffb_details_data = [
 		{"fdd_date":"7 Nov 2016","fdd_val":"321"},
 		{"fdd_date":"21 Nov 2016","fdd_val":"298"}
 	]
-	
+
 	var fdd_val_total = 0;
-	
+
 	for (var i = 0; i < ffb_details_data.length; i++) {
 		var qq = ffb_details_data[i];
 		fdd_val_date = qq.fdd_date;
 		fdd_val_val = qq.fdd_val;
-		
+
 		fdd_val_total += parseInt(qq.fdd_val);
-		
+
 		$('.portlet_ffb_details table tbody').append('<tr><td>'+fdd_val_date+'</td><td class="col_blk_01"><span>'+fdd_val_val+'</span></td>');
 		$('.pbn_ffb div.plate span.number').text(fdd_val_total+'kg');
 		$('.pbn_ffb_details div.plate span.number').text(fdd_val_total+'kg');
 	};
-	
-	
+
+
 	// ------------------------------
 	//
 	// scurve
 	//
 	// ------------------------------
-	
+
 	$('div.portlet_scurve div.portlet_scurve_data > .row > div.item:nth-child(1) span.iv_low').text('1,092,936');
 	$('div.portlet_scurve div.portlet_scurve_data > .row > div.item:nth-child(2) span.iv_high').text('1,457,352');
 	$('div.portlet_scurve div.portlet_scurve_data > .row > div.item:nth-child(3) span.iv_actual').text('1,258,040');
-	
+
 	$(function () {
 		Highcharts.setOptions({
 			colors: ['#ff0055','#00aaff','#00ff55']
@@ -186,6 +186,7 @@ $(document).ready(function(){
 				enabled: false
 			}
 		});
+
 		// Highcharts.chart('highcharts-ht1', {
 		// 	chart: {
 		// 		type: 'column'
@@ -267,7 +268,7 @@ $(document).ready(function(){
 		// 					}
 		// 				}
 		// 			}
-        //
+		//
 		// 		},
 		// 		series: [{
 		// 			name: 'Actual',
@@ -418,6 +419,7 @@ $(document).ready(function(){
 		// 	}
 		// });
 
+
 	});
 	Highcharts.setOptions({
 		// colors: ['rgb(255, 85, 0)','rgb(255, 255, 0)','rgb(0, 255, 0)', 'rgb(0, 153, 255)','rgb(0, 0, 255)']
@@ -456,17 +458,17 @@ $(document).ready(function(){
 		series: [{
 		},
 			{
-			name: 'Versions',
-			data: [["Immature",22],["Young (4-5 years)",21],["Prime (10-20 Years)",14],["Old (21-25 Years)",17],[">25 Years",26]],
-			size: '80%',
-			innerSize: '60%',
-			dataLabels: {
-				formatter: function () {
-					// display only if larger than 1
-					return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+				name: 'Versions',
+				data: [["Immature",22],["Young (4-5 years)",21],["Prime (10-20 Years)",14],["Old (21-25 Years)",17],[">25 Years",26]],
+				size: '80%',
+				innerSize: '60%',
+				dataLabels: {
+					formatter: function () {
+						// display only if larger than 1
+						return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+					}
 				}
-			}
-		}],
+			}],
 		credits: {
 			enabled: false
 		}
@@ -477,9 +479,6 @@ $(document).ready(function(){
 			colors: ['#09f','#0fa', 'rgb(255,255,25)','#f90', '#f45b5b']
 		});
 		Highcharts.chart('line_chart_1', {
-			chart: {
-				type: 'line'
-			},
 			title: {
 				text: ''
 			},
@@ -487,7 +486,7 @@ $(document).ready(function(){
 				text: ''
 			},
 			xAxis: {
-				categories: ['July','August','September','October','November','December','January','February','March','April','May','June']
+				categories: ['July 16','August 16','September 16','October 16','November 16','December 16','January 17','February 17','March 17','April 17','May 17','June 17']
 			},
 			yAxis: {
 				title: {
@@ -513,6 +512,7 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
+				type: 'line',
 				name: 'Financial Year 2015-2016',
 				marker: {
 					symbol: 'square'
@@ -520,12 +520,26 @@ $(document).ready(function(){
 				data: [1500,1800,2300,2500,2800,3000,3100,3400,3400,3800,4000,4100]
 
 			}, {
+				type: 'line',
 				name: 'Financial Year 2016-2017',
 				marker: {
 					symbol: 'diamond'
 				},
-				data: [1300,1400,1600,1800,2000,3000]
-			}],
+				data: [1300,1400,1600,1800,2000,3000,3200,3400,3450, 3350]
+			}, {
+				type: 'column',
+				name: 'Week 1',
+				data: [1100, 1200, 1200, 1300, 1300 ,1290, 1250, 900, 1200, 1950]
+			},{
+				type: 'column',
+				name: 'Week 2',
+				data: [1200, 1320, 1390, 1500, 1400, 1300, 1000, 1290, 1430, 1960]
+			},{
+				type: 'column',
+				name: 'Week 3',
+				data: [1500, 1210, 1410, 1800, 1600, 1750, 1320, 1320, 1600]
+			}
+			],
 			credits: {
 				enabled: false
 			}
@@ -623,6 +637,74 @@ $(document).ready(function(){
 			enabled: false
 		}
 	});
+
+	// var a = [1,2,5];
+	// var j = 0, i = 0;
+	// Highcharts.chart('dbar_chart_2', {
+	// 	chart: {
+	// 		type: 'bar'
+	// 	},
+	// 	title: {
+	// 		text: 'QUALITY VARIANCE'
+	// 	},
+	// 	xAxis: {
+	// 		categories: ['Field 1', 'Field 2', 'Field 3'],
+	// 		title: {
+	// 			text: null
+	// 		}
+	// 	},
+	// 	yAxis: {
+	// 		min: 0,
+	// 		title: {
+	// 			text: null
+	// 		},
+	// 		labels: {
+	// 			overflow: 'justify'
+	// 		}
+	// 	},
+	// 	tooltip: {
+	// 		formatter: function () {
+	// 				return '<b>'+this.x+'</b><br><span>' + this.series.name +':'+ this.y +'</span>';
+	// 		}
+	// 	},
+	// 	plotOptions: {
+	// 		bar: {
+	// 			dataLabels: {
+	// 				enabled: true,
+	// 				formatter : function(){
+	// 					if(this.series.name === 'Variance'){
+	// 						r = (a[j]) +"%";
+	// 						j++;
+	// 					}else{
+	// 						r = this.y;
+	// 					}
+	// 					return r;
+	// 				}
+	// 			}
+	// 		}
+	// 	},
+	// 	legend: {
+	// 		layout: 'vertical',
+	// 		align: 'right',
+	// 		verticalAlign: 'top',
+	// 		x: -40,
+	// 		y: 0,
+	// 		floating: true,
+	// 		borderWidth: 1,
+	// 		backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+	// 		shadow: true
+	// 	},
+	// 	credits: {
+	// 		enabled: false
+	// 	},
+	// 	series: [{
+	// 		name: 'Total FFB',
+	// 		data: [759, 1300, 1160]
+	// 	},{
+	// 		name: 'Variance',
+	// 		data: [7.59, 26, 58]
+	// 	}]
+	// });
 
 
 });	

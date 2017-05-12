@@ -1,9 +1,8 @@
-
 <div id="dashboard" class="col-md-12">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
-			
+
 				<div class="custom_breadcrumb col-md-12">
 					<div class="">
 						<nav class="">
@@ -20,7 +19,7 @@
 						Estate
 					</div>
 				</div>
-				
+
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-md-4">
@@ -46,6 +45,20 @@
 						<div class="col-md-8">
 							<div class="row">
 								<?php include 'procurement/portlet/estate_productivity.html'; ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="row">
+								<?php include 'procurement/portlet/portlet_outturn.html'; ?>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="row">
+								<?php include 'procurement/portlet/portlet_harvesters_performance.html'; ?>
 							</div>
 						</div>
 					</div>
