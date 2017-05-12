@@ -1582,6 +1582,7 @@ div.portlet_table table tbody td {
 	background: #262845;
 	margin-left: 15px;
 	border-radius: 5px;
+	border: 1px solid #000;
 }
 
 .table-style1 thead th:first-child{

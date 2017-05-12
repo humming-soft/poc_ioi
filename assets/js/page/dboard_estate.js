@@ -485,7 +485,7 @@ $(document).ready(function(){
 				text: ''
 			},
 			xAxis: {
-				categories: ['July','August','September','October','November','December','January','February','March','April','May','June']
+				categories: ['July 16','August 16','September 16','October 16','November 16','December 16','January 17','February 17','March 17','April 17','May 17','June 17']
 			},
 			yAxis: {
 				title: {
