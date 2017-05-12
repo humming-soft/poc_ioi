@@ -187,242 +187,243 @@ $(document).ready(function(){
 			}
 		});
 
-		Highcharts.chart('highcharts-ht1', {
-			chart: {
-				type: 'column'
-			},
-			title: {
-				text: 'Budget'
-			},
-			xAxis: {
-				type: 'category'
-			},
-			yAxis: [{
-				title: {
-					text: 'RM',
-					align: 'middle'
-				},
-				labels: {
-					format: '{value}'
-				}
-			}],
-			rangeSelector: {
-				selected: 1
-			},
-			legend: {
-				shadow: false
-			},
-			tooltip: {
-				shared: true,
-				valuePrefix: 'RM '
-			},
-			plotOptions: {
-				column: {
-					grouping: false,
-					shadow: false,
-					borderWidth: 1
-				},
-				series: {
-					borderColor: '#fff'
-				}
-			},
-			series: [{
-				name: 'Target',
-				color: '#2255BC',
-				data: [{
-					name: '2016-2017',
-						y:6846000
-					}],
-				pointPadding: 0.3,
-				pointPlacement: 0,
-			}, {
-				name: 'Actual',
-				color: '#0c9',
-				data: [{
-					name: '2016-2017',
-					y:4812000,
-					 drilldown: 'b1'
-				}],
-				pointPadding: 0.4,
-				pointPlacement: 0
-			}],
-			drilldown: {
-				drillUpButton: {
-					relativeTo: 'spacingBox',
-					position: {
-						y: 0,
-						x: 0
-					},
-					theme: {
-						fill: 'white',
-						'stroke-width': 1,
-						stroke: 'silver',
-						r: 0,
-						states: {
-							hover: {
-								fill: '#bada55'
-							},
-							select: {
-								stroke: '#039',
-								fill: '#bada55'
-							}
-						}
-					}
-
-				},
-				series: [{
-					name: 'Actual',
-					id: 'b1',
-					data: [
-						[
-							'Jul 16',
-							23400
-						],
-						[
-							'Aug 16',
-							23500
-						],
-						[
-							'Sept 16',
-							21400
-						],
-						[
-							'Oct 16',
-							23470
-						],
-						[
-							'Nov 16',
-							28400
-						],
-						[
-							'Dec 16',
-							33400
-						],
-						[
-							'Jan 17',
-							53400
-						],
-						[
-							'Feb 17',
-							21000
-						],
-						[
-							'Mar 17',
-							20900
-						],
-						[
-							'Apr 17',
-							20900
-						]
-					]
-				},
-				]
-			},
-			credits: {
-				enabled: false
-			}
-		});
-		$('#highcharts-ht2').highcharts({
-			chart: {
-				type: 'column'
-			},
-			title: {
-				text: 'Harvest'
-			},
-			xAxis: {
-				categories: [
-					'2016',
-				]
-			},
-			yAxis: [{
-				min: 0,
-				title: {
-					text: 'Metric Ton (MT)'
-				},
-				labels: {
-					format: '{value}'
-				}
-			}],
-			legend: {
-				shadow: false
-			},
-			tooltip: {
-				shared: true,
-				valueSuffix: ' MT'
-			},
-			plotOptions: {
-				column: {
-					grouping: false,
-					shadow: false,
-					borderWidth: 0
-				}
-			},
-			series: [{
-				name: 'Target',
-				color: '#f50',
-				data: [4000],
-				pointPadding: 0.3,
-				pointPlacement: 0
-			}, {
-				name: 'Actual',
-				color: '#0c9',
-				data: [3580],
-				pointPadding: 0.4,
-				pointPlacement: 0
-			}],
-			credits: {
-				enabled: false
-			}
-		});
-		$('#highcharts-ht3').highcharts({
-			chart: {
-				type: 'column'
-			},
-			title: {
-				text: 'Total FFB Harvested'
-			},
-			xAxis: {
-				categories: [
-					'2016',
-				]
-			},
-			yAxis: [{
-				min: 0,
-				title: {
-					text: 'Percentage (%)'
-				},
-				labels: {
-					format: '{value}'
-				}
-			}],
-			legend: {
-				shadow: false
-			},
-			tooltip: {
-				shared: true,
-				valueSuffix: ' %'
-			},
-			plotOptions: {
-				column: {
-					grouping: false,
-					shadow: false,
-					borderWidth: 0
-				}
-			},
-			series: [{
-				name: 'Variance',
-				color: '#0f0',
-				data: [68]
-			}],
-			credits: {
-				enabled: false
-			}
-		});
+		// Highcharts.chart('highcharts-ht1', {
+		// 	chart: {
+		// 		type: 'column'
+		// 	},
+		// 	title: {
+		// 		text: 'Budget'
+		// 	},
+		// 	xAxis: {
+		// 		type: 'category'
+		// 	},
+		// 	yAxis: [{
+		// 		title: {
+		// 			text: 'RM',
+		// 			align: 'middle'
+		// 		},
+		// 		labels: {
+		// 			format: '{value}'
+		// 		}
+		// 	}],
+		// 	rangeSelector: {
+		// 		selected: 1
+		// 	},
+		// 	legend: {
+		// 		shadow: false
+		// 	},
+		// 	tooltip: {
+		// 		shared: true,
+		// 		valuePrefix: 'RM '
+		// 	},
+		// 	plotOptions: {
+		// 		column: {
+		// 			grouping: false,
+		// 			shadow: false,
+		// 			borderWidth: 1
+		// 		},
+		// 		series: {
+		// 			borderColor: '#fff'
+		// 		}
+		// 	},
+		// 	series: [{
+		// 		name: 'Target',
+		// 		color: '#2255BC',
+		// 		data: [{
+		// 			name: '2016-2017',
+		// 				y:6846000
+		// 			}],
+		// 		pointPadding: 0.3,
+		// 		pointPlacement: 0,
+		// 	}, {
+		// 		name: 'Actual',
+		// 		color: '#0c9',
+		// 		data: [{
+		// 			name: '2016-2017',
+		// 			y:4812000,
+		// 			 drilldown: 'b1'
+		// 		}],
+		// 		pointPadding: 0.4,
+		// 		pointPlacement: 0
+		// 	}],
+		// 	drilldown: {
+		// 		drillUpButton: {
+		// 			relativeTo: 'spacingBox',
+		// 			position: {
+		// 				y: 0,
+		// 				x: 0
+		// 			},
+		// 			theme: {
+		// 				fill: 'white',
+		// 				'stroke-width': 1,
+		// 				stroke: 'silver',
+		// 				r: 0,
+		// 				states: {
+		// 					hover: {
+		// 						fill: '#bada55'
+		// 					},
+		// 					select: {
+		// 						stroke: '#039',
+		// 						fill: '#bada55'
+		// 					}
+		// 				}
+		// 			}
+        //
+		// 		},
+		// 		series: [{
+		// 			name: 'Actual',
+		// 			id: 'b1',
+		// 			data: [
+		// 				[
+		// 					'Jul 16',
+		// 					23400
+		// 				],
+		// 				[
+		// 					'Aug 16',
+		// 					23500
+		// 				],
+		// 				[
+		// 					'Sept 16',
+		// 					21400
+		// 				],
+		// 				[
+		// 					'Oct 16',
+		// 					23470
+		// 				],
+		// 				[
+		// 					'Nov 16',
+		// 					28400
+		// 				],
+		// 				[
+		// 					'Dec 16',
+		// 					33400
+		// 				],
+		// 				[
+		// 					'Jan 17',
+		// 					53400
+		// 				],
+		// 				[
+		// 					'Feb 17',
+		// 					21000
+		// 				],
+		// 				[
+		// 					'Mar 17',
+		// 					20900
+		// 				],
+		// 				[
+		// 					'Apr 17',
+		// 					20900
+		// 				]
+		// 			]
+		// 		},
+		// 		]
+		// 	},
+		// 	credits: {
+		// 		enabled: false
+		// 	}
+		// });
+		// $('#highcharts-ht2').highcharts({
+		// 	chart: {
+		// 		type: 'column'
+		// 	},
+		// 	title: {
+		// 		text: 'Harvest'
+		// 	},
+		// 	xAxis: {
+		// 		categories: [
+		// 			'2016',
+		// 		]
+		// 	},
+		// 	yAxis: [{
+		// 		min: 0,
+		// 		title: {
+		// 			text: 'Metric Ton (MT)'
+		// 		},
+		// 		labels: {
+		// 			format: '{value}'
+		// 		}
+		// 	}],
+		// 	legend: {
+		// 		shadow: false
+		// 	},
+		// 	tooltip: {
+		// 		shared: true,
+		// 		valueSuffix: ' MT'
+		// 	},
+		// 	plotOptions: {
+		// 		column: {
+		// 			grouping: false,
+		// 			shadow: false,
+		// 			borderWidth: 0
+		// 		}
+		// 	},
+		// 	series: [{
+		// 		name: 'Target',
+		// 		color: '#f50',
+		// 		data: [4000],
+		// 		pointPadding: 0.3,
+		// 		pointPlacement: 0
+		// 	}, {
+		// 		name: 'Actual',
+		// 		color: '#0c9',
+		// 		data: [3580],
+		// 		pointPadding: 0.4,
+		// 		pointPlacement: 0
+		// 	}],
+		// 	credits: {
+		// 		enabled: false
+		// 	}
+		// });
+		// $('#highcharts-ht3').highcharts({
+		// 	chart: {
+		// 		type: 'column'
+		// 	},
+		// 	title: {
+		// 		text: 'Total FFB Harvested'
+		// 	},
+		// 	xAxis: {
+		// 		categories: [
+		// 			'2016',
+		// 		]
+		// 	},
+		// 	yAxis: [{
+		// 		min: 0,
+		// 		title: {
+		// 			text: 'Percentage (%)'
+		// 		},
+		// 		labels: {
+		// 			format: '{value}'
+		// 		}
+		// 	}],
+		// 	legend: {
+		// 		shadow: false
+		// 	},
+		// 	tooltip: {
+		// 		shared: true,
+		// 		valueSuffix: ' %'
+		// 	},
+		// 	plotOptions: {
+		// 		column: {
+		// 			grouping: false,
+		// 			shadow: false,
+		// 			borderWidth: 0
+		// 		}
+		// 	},
+		// 	series: [{
+		// 		name: 'Variance',
+		// 		color: '#0f0',
+		// 		data: [68]
+		// 	}],
+		// 	credits: {
+		// 		enabled: false
+		// 	}
+		// });
 		
 
 	});
 	Highcharts.setOptions({
-		colors: ['rgb(255, 85, 0)','rgb(255, 255, 0)','rgb(0, 255, 0)', 'rgb(0, 153, 255)','rgb(0, 0, 255)']
+		// colors: ['rgb(255, 85, 0)','rgb(255, 255, 0)','rgb(0, 255, 0)', 'rgb(0, 153, 255)','rgb(0, 0, 255)']
+		colors: ['#999','#afa','#0c0', '#ff0','#f50']
 	});
 	Highcharts.chart('donut', {
 		chart: {
@@ -475,7 +476,7 @@ $(document).ready(function(){
 
 	$(function () {
 		Highcharts.setOptions({
-			colors: ['#09f','#0fa', '#90ed7d','#f45b5b','rgb(25,178,255)']
+			colors: ['#09f','#0fa', 'rgb(255,255,25)','#f90', '#f45b5b']
 		});
 		Highcharts.chart('line_chart_1', {
 			title: {
