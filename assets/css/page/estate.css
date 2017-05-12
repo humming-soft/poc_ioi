@@ -38,3 +38,69 @@ div.portlet div.height_x4 div.highcharts_inside div {
 }
 
 
+
+/*
+portlet_hi
+*/
+/*div.portlet_hidiv.content {*/
+	/*background: #252237;*/
+/*}*/
+/*div.portlet_hidiv.portlet_content {*/
+	/*padding-top: 10px;*/
+	/*padding-bottom: 10px;*/
+/*}*/
+/*div.portlet_hidiv.portlet_title {*/
+	/*color: #fff;*/
+/*}*/
+
+/*subtitle*/
+div.portlet_hi .title {
+	padding: 5px 0 15px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+div.portlet_hi .subtitle {
+	padding: 5px 0 15px;
+}
+
+/*chart*/
+div.portlet_hi .chart {
+	height: 330px;
+}
+
+/*table*/
+div.portlet_hi .table {
+	padding: 5px;
+	text-align: center;
+}
+
+div.portlet_hi .table .table_header {
+	padding: 5px;
+	font-size: .8em;
+	background: #113;
+}
+div.portlet_hi .table .table_content {
+	padding: 20px 0;
+	font-size: 2em;
+	background: #334;
+}
+
+div.portlet_hi .table_content_1 {
+	color: #0ff;
+}
+div.portlet_hi .table_content_2 {
+	color: #afa;
+}
+div.portlet_hi .table_content_3 .trend_down_1 {
+	color: #ff0;
+}
+div.portlet_hi .table_content_3 .trend_down_2 {
+	color: #f50;
+}
+div.portlet_hi .table_content_3 .trend_down_3 {
+	color: #f05;
+}
+

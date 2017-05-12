@@ -29,10 +29,15 @@
 						</div>
 						<div class="col-md-8">
 							<div class="row">
-								<?php include 'procurement/portlet/harvesting_info.html'; ?>
+								<?php //include 'procurement/portlet/harvesting_info.html'; ?>
 
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="row">
+						<?php include 'procurement/portlet/harvesting_info.html'; ?>
 					</div>
 				</div>
 				<div class="col-md-12">
