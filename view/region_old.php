@@ -22,9 +22,10 @@
 					<div class="ig_plate poipoi">
 						<!-- -- -->
 						
-						<?php include 'module/dboard_region.php' ?>
+						<?php include 'module/gis_accessories_region.php' ?>
 						
 						<!-- -- -->
+						<img src="../assets/images/base/blank.jpg">
 					</div>
 				</div>
 			</div>
@@ -36,6 +37,6 @@
 		<!-- -- -->
 	</div>
 </div>
-<script type="text/javascript" src="../assets/js/page/dboard_region.js"></script>
-<link rel="stylesheet" type="text/css" href="../assets/css/page/region.css">
+<script type="text/javascript" src="../assets/js/gis/gis_region.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/css/gis/gis_region.css">
 <?php include 'template/default_footer.php' ?>

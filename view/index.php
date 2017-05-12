@@ -25,7 +25,7 @@
 						<?php include 'module/gis_accessories_index.php' ?>
 						
 						<!-- -- -->
-						<img class="flex_size" src="../assets/images/base/index.jpg">
+						<img class="flex_size" src="../assets/images/base/index.png">
 					</div>
 				</div>
 			</div>

@@ -69,7 +69,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'APR-16','APR-17'
+					'APR-17'
 				]
 			},
 			yAxis: [{
@@ -90,23 +90,16 @@ $(document).ready(function(){
 			},
 			series: [{
 				showInLegend:false,
-				name: 'Budget',
-				color: '#09f',
-				data: [250000,260000],
-				pointPadding: 0.2,
-				pointPlacement: 0
-			}, {
-				showInLegend:false,
 				name: 'Target',
 				color: '#0ff',
-				data: [200000,190000],
+				data: [200000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
 				showInLegend:false,
 				name: 'Actual',
 				color: '#c0c',
-				data: [114000,127000],
+				data: [114000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]
@@ -173,7 +166,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'APR-16','APR-17'
+					'APR-17'
 				]
 			},
 			yAxis: [{
@@ -194,23 +187,16 @@ $(document).ready(function(){
 			},
 			series: [{
 				showInLegend:false,
-				name: 'Budget',
-				color: '#09f',
-				data: [250000,260000],
-				pointPadding: 0.2,
-				pointPlacement: 0
-			}, {
-				showInLegend:false,
 				name: 'Target',
 				color: '#0ff',
-				data: [200000,190000],
+				data: [200000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
 				showInLegend:false,
 				name: 'Actual',
 				color: '#c0c',
-				data: [114000,127000],
+				data: [114000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]
@@ -277,7 +263,7 @@ $(document).ready(function(){
 			},
 			xAxis: {
 				categories: [
-					'APR-16','APR-17'
+					'APR-17'
 				]
 			},
 			yAxis: [{
@@ -298,23 +284,16 @@ $(document).ready(function(){
 			},
 			series: [{
 				showInLegend:false,
-				name: 'Budget',
-				color: '#09f',
-				data: [250000,260000],
-				pointPadding: 0.2,
-				pointPlacement: 0
-			}, {
-				showInLegend:false,
 				name: 'Target',
 				color: '#0ff',
-				data: [200000,190000],
+				data: [200000],
 				pointPadding: 0.3,
 				pointPlacement:0
 			}, {
 				showInLegend:false,
 				name: 'Actual',
 				color: '#c0c',
-				data: [114000,127000],
+				data: [114000],
 				pointPadding: 0.4,
 				pointPlacement: 0
 			}]

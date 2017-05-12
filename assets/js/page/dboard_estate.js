@@ -1,6 +1,6 @@
 $(document).ready(function(){
-
-	$('.blink').blink();
+	
+	
 	
 	
 	// ------------------------------
@@ -230,7 +230,7 @@ $(document).ready(function(){
 				name: 'Target',
 				color: '#2255BC',
 				data: [{
-					name: '2016-2017',
+					name: '2016',
 						y:6846000
 					}],
 				pointPadding: 0.3,
@@ -239,7 +239,7 @@ $(document).ready(function(){
 				name: 'Actual',
 				color: '#0c9',
 				data: [{
-					name: '2016-2017',
+					name: '2016',
 					y:4812000,
 					 drilldown: 'b1'
 				}],
@@ -274,44 +274,37 @@ $(document).ready(function(){
 					name: 'Actual',
 					id: 'b1',
 					data: [
+						['July', 23400 ],
 						[
-							'Jul 16',
-							23400
-						],
-						[
-							'Aug 16',
+							'August',
 							23500
 						],
 						[
-							'Sept 16',
+							'September',
 							21400
 						],
 						[
-							'Oct 16',
+							'October',
 							23470
 						],
 						[
-							'Nov 16',
+							'November',
 							28400
 						],
 						[
-							'Dec 16',
+							'December',
 							33400
 						],
 						[
-							'Jan 17',
+							'January',
 							53400
 						],
 						[
-							'Feb 17',
+							'February',
 							21000
 						],
 						[
-							'Mar 17',
-							20900
-						],
-						[
-							'Apr 17',
+							'March',
 							20900
 						]
 					]
@@ -410,7 +403,7 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
-				name: 'Variance',
+				name: 'Total FFB',
 				color: '#0f0',
 				data: [68]
 			}],
@@ -475,9 +468,12 @@ $(document).ready(function(){
 
 	$(function () {
 		Highcharts.setOptions({
-			colors: ['#09f','#0fa', '#90ed7d','#f45b5b','rgb(25,178,255)']
+			colors: ['#09f','#0fa']
 		});
 		Highcharts.chart('line_chart_1', {
+			chart: {
+				type: 'line'
+			},
 			title: {
 				text: ''
 			},
@@ -485,7 +481,7 @@ $(document).ready(function(){
 				text: ''
 			},
 			xAxis: {
-				categories: ['July 16','August 16','September 16','October 16','November 16','December 16','January 17','February 17','March 17','April 17','May 17','June 17']
+				categories: ['July','August','September','October','November','December','January','February','March','April','May','June']
 			},
 			yAxis: {
 				title: {
@@ -511,7 +507,6 @@ $(document).ready(function(){
 				}
 			},
 			series: [{
-				type: 'line',
 				name: 'Financial Year 2015-2016',
 				marker: {
 					symbol: 'square'
@@ -519,26 +514,12 @@ $(document).ready(function(){
 				data: [1500,1800,2300,2500,2800,3000,3100,3400,3400,3800,4000,4100]
 
 			}, {
-				type: 'line',
 				name: 'Financial Year 2016-2017',
 				marker: {
 					symbol: 'diamond'
 				},
-				data: [1300,1400,1600,1800,2000,3000,3200,3400,3450, 3350]
-			}, {
-					type: 'column',
-					name: 'Week 1',
-					data: [1100, 1200, 1200, 1300, 1300 ,1290, 1250, 900, 1200, 1950]
-			},{
-				type: 'column',
-				name: 'Week 2',
-				data: [1200, 1320, 1390, 1500, 1400, 1300, 1000, 1290, 1430, 1960]
-			},{
-				type: 'column',
-				name: 'Week 3',
-				data: [1500, 1210, 1410, 1800, 1600, 1750, 1320, 1320, 1600]
-			}
-			],
+				data: [1300,1400,1600,1800,2000,3000]
+			}],
 			credits: {
 				enabled: false
 			}
@@ -636,74 +617,6 @@ $(document).ready(function(){
 			enabled: false
 		}
 	});
-
-	// var a = [1,2,5];
-	// var j = 0, i = 0;
-	// Highcharts.chart('dbar_chart_2', {
-	// 	chart: {
-	// 		type: 'bar'
-	// 	},
-	// 	title: {
-	// 		text: 'QUALITY VARIANCE'
-	// 	},
-	// 	xAxis: {
-	// 		categories: ['Field 1', 'Field 2', 'Field 3'],
-	// 		title: {
-	// 			text: null
-	// 		}
-	// 	},
-	// 	yAxis: {
-	// 		min: 0,
-	// 		title: {
-	// 			text: null
-	// 		},
-	// 		labels: {
-	// 			overflow: 'justify'
-	// 		}
-	// 	},
-	// 	tooltip: {
-	// 		formatter: function () {
-	// 				return '<b>'+this.x+'</b><br><span>' + this.series.name +':'+ this.y +'</span>';
-	// 		}
-	// 	},
-	// 	plotOptions: {
-	// 		bar: {
-	// 			dataLabels: {
-	// 				enabled: true,
-	// 				formatter : function(){
-	// 					if(this.series.name === 'Variance'){
-	// 						r = (a[j]) +"%";
-	// 						j++;
-	// 					}else{
-	// 						r = this.y;
-	// 					}
-	// 					return r;
-	// 				}
-	// 			}
-	// 		}
-	// 	},
-	// 	legend: {
-	// 		layout: 'vertical',
-	// 		align: 'right',
-	// 		verticalAlign: 'top',
-	// 		x: -40,
-	// 		y: 0,
-	// 		floating: true,
-	// 		borderWidth: 1,
-	// 		backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-	// 		shadow: true
-	// 	},
-	// 	credits: {
-	// 		enabled: false
-	// 	},
-	// 	series: [{
-	// 		name: 'Total FFB',
-	// 		data: [759, 1300, 1160]
-	// 	},{
-	// 		name: 'Variance',
-	// 		data: [7.59, 26, 58]
-	// 	}]
-	// });
 
 
 });	
