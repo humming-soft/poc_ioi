@@ -1,7 +1,7 @@
 <div class="custom_breadcrumb gis_breadcrumb col-md-7">
 	<div class="">
 		<nav class="">
-			<span class="custom_breadcrumb-item active"><i class="fa fa-home" aria-hidden="true"></i></span>
+			<!-- <span class="custom_breadcrumb-item active"><i class="fa fa-home" aria-hidden="true"></i></span> -->
 		</nav>
 	</div>
 	<div class="title">
@@ -43,7 +43,10 @@
 			<!-- -- -->
 			<!-- -- -->
 			<div class="barchart_group barchart_group_1">
-				<div class="title1">FFB Harvest<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></div>
+				<div class="title1">
+					<span>FFB Harvest<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></span>
+					<span class="ig_plate_asof">(As of : 15 Apr 2017)</span>
+				</div>
 				<div class="barchart_lr barchart_left">
 					<div class="title2">Month to Date</div>
 					<div class="barchart">
@@ -51,8 +54,12 @@
 					</div>
 					<div class="status_group">
 						<div class="status status_l">
-							<span class="title">Variance</span>
+							<span class="title">Achievement</span>
 							<span class="value">7%</span>
+						</div>
+						<div class="status status_c">
+							<span class="title">Variance</span>
+							<span class="value">3%</span>
 						</div>
 						<div class="status status_r">
 							<span class="title">Trend</span>
@@ -67,6 +74,10 @@
 					</div>
 					<div class="status_group">
 						<div class="status status_l">
+							<span class="title">Achievement</span>
+							<span class="value">7%</span>
+						</div>
+						<div class="status status_c">
 							<span class="title">Variance</span>
 							<span class="value">3%</span>
 						</div>
@@ -80,7 +91,10 @@
 			<!-- -- -->
 			<!-- -- -->
 			<div class="barchart_group barchart_group_2">
-				<div class="title1">CPO<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></div>
+				<div class="title1">
+					<span>CPO<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></span>
+					<span class="ig_plate_asof">(As of : 15 Apr 2017)</span>
+				</div>
 				<div class="barchart_lr barchart_left">
 					<div class="title2">Month to Date</div>
 					<div class="barchart">
@@ -88,8 +102,12 @@
 					</div>
 					<div class="status_group">
 						<div class="status status_l">
+							<span class="title">Achievement</span>
+							<span class="value">7%</span>
+						</div>
+						<div class="status status_c">
 							<span class="title">Variance</span>
-							<span class="value">8%</span>
+							<span class="value">3%</span>
 						</div>
 						<div class="status status_r">
 							<span class="title">Trend</span>
@@ -104,8 +122,12 @@
 					</div>
 					<div class="status_group">
 						<div class="status status_l">
-							<span class="title">Variance</span>
+							<span class="title">Achievement</span>
 							<span class="value">7%</span>
+						</div>
+						<div class="status status_c">
+							<span class="title">Variance</span>
+							<span class="value">3%</span>
 						</div>
 						<div class="status status_r">
 							<span class="title">Trend</span>
@@ -117,7 +139,10 @@
 			<!-- -- -->
 			<!-- -- -->
 			<div class="barchart_group barchart_group_3">
-				<div class="title1">Palm Kernel<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></div>
+				<div class="title1">
+					<span>Palm Kernel<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></span>
+					<span class="ig_plate_asof">(As of : 15 Apr 2017)</span>
+				</div>
 				<div class="barchart_lr barchart_left">
 					<div class="title2">Month to Date</div>
 					<div class="barchart">
@@ -125,8 +150,12 @@
 					</div>
 					<div class="status_group">
 						<div class="status status_l">
-							<span class="title">Variance</span>
+							<span class="title">Achievement</span>
 							<span class="value">7%</span>
+						</div>
+						<div class="status status_c">
+							<span class="title">Variance</span>
+							<span class="value">3%</span>
 						</div>
 						<div class="status status_r">
 							<span class="title">Trend</span>
@@ -141,8 +170,12 @@
 					</div>
 					<div class="status_group">
 						<div class="status status_l">
+							<span class="title">Achievement</span>
+							<span class="value">7%</span>
+						</div>
+						<div class="status status_c">
 							<span class="title">Variance</span>
-							<span class="value">9%</span>
+							<span class="value">3%</span>
 						</div>
 						<div class="status status_r">
 							<span class="title">Trend</span>
@@ -153,9 +186,86 @@
 			</div>
 			<!-- -- -->
 			<!-- -- -->
-			<div class="portlet_total_planted">
-				<div class="text">
-					Total Planted : 20,000 Hectar
+			<!-- <div class="barchart_group table_group_1">
+				<div class="title1">
+					<span>Production Data<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></span>
+					<span class="ig_plate_asof">(As of : 15 Apr 2017)</span>
+				</div>
+				<div>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Location</th>
+								<th colspan="3">FFB</th>
+								<th colspan="3">CPO</th>
+								<th colspan="3">PK</th>
+							</tr>
+							<tr>
+								<th></th>
+								<th>Act</th>
+								<th>Bud</th>
+								<th>Var</th>
+								<th>Act</th>
+								<th>Bud</th>
+								<th>Var</th>
+								<th>Act</th>
+								<th>Bud</th>
+								<th>Var</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>LD</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+							</tr>
+							<tr>
+								<td>SD</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+							</tr>
+							<tr>
+								<td>WM</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+								<td>8888</td>
+								<td>8888</td>
+								<td>88%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div> -->
+			<!-- -- -->
+			<!-- -- -->
+			<div class="barchart_group barchart_group_5">
+				<div class="title1">
+					<span>Regional Production Data<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></span>
+					<span class="ig_plate_asof">(As of : 15 Apr 2017)</span>
+				</div>
+				<div class="bar_chart">
+					<div class="bar_chart_plate">
+						<div class="bar_chart_left">poi</div>
+						<div class="bar_chart_right">poi</div>
+					</div>
 				</div>
 			</div>
 			<!-- -- -->

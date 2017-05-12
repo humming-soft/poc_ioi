@@ -2,91 +2,60 @@
 	<div class="row content">
 		<div class="col-md-12 portlet_title">
 			<i class="fa_title_icon fa fa-area-chart" aria-hidden="true"></i>
-			Harvest <span class="plate_asof">(As of : 15 April 2017)</span>
+			Harvest
 		</div>
 		<br><br><br>
-		<div class="col-md-5 portlet_content background_highlighted">
-			<div class="row height_x3 highcharts_inside" data-mcs-theme="light">
+		<div class="col-md-4 portlet_content">
+			<div class="row height_x2 highcharts_inside" data-mcs-theme="light" style="height: 255px !important;">
 				<div id="dpie_chart_1" class="col-lg-12"></div>
-				<div class="col-sm-12 col-md-12">
-					<table class="table table-style1 m-t-15">
-						<thead>
-						<tr>
-							<th>Round</th>
-							<th>Value (MT)</th>
-							<th>Days</th>
-						</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Round 1</td>
-								<td>360 MT</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>Round 2</td>
-								<td>430 MT</td>
-								<td>5</td>
-							</tr>
-							<tr>
-								<td>Round 3</td>
-								<td>337 MT</td>
-								<td>3</td>
-							</tr>
-						</tbody>
-					</table>
+			</div>
+		</div>
+		<div class="col-md-4 portlet_content">
+			<div class="row height_x2 highcharts_inside col2" data-mcs-theme="light">
+				<span>ATTENDANCE</span><br>
+				<div class="col-sm-12 col-md-12 item psd_data_type1 data1 m-t-10">
+					<span class="item_title t-a-left">Total Required</span>
+					<span class="item_value iv_totalffb">120</span>
+				</div>
+				<div class="col-sm-12 col-md-12 item psd_data_type2 data2">
+					<span class="item_title t-a-left">Current</span>
+					<span class="item_value iv_actualprogress">100</span>
+				</div>
+				<div class="col-sm-12 col-md-12 item psd_data_type3 data3">
+					<span class="item_title t-a-left"totalffb>Shortfall</span>
+					<span class="item_value iv_shortfall">20</span>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-6 portlet_content m-l-70">
-			<div class="row height_x2 highcharts_inside col2" data-mcs-theme="light">
+		<div class="col-md-4 portlet_content portlet_table">
+			<div class="row height_x2 highcharts_inside col3" data-mcs-theme="light">
+				<span>QUALITY VARIANCE</span><br>
 				<div class="col-md-12">
-					<span>ATTENDANCE</span><br>
-					<div class="col-sm-12 col-md-12 item psd_data_type1 data1 m-t-10">
-						<span class="item_title t-a-left">Total Required</span>
-						<span class="item_value iv_totalffb">120</span>
+					<div class="row m-10">
+						<table class="table">
+							<thead>
+							<tr>
+								<th class="col_separation">Field</th>
+								 <th class="col_separation">Variance (%)</th>
+								<th class="col_separation">Total FFB (MT)</th>
+							</tr>
+							</thead>
+							<tbody>
+							<!-- <tr>
+								<td>8888</td>
+								<td class="col_blk_01"><span>8888</span></td>
+								<td class="col_blk_02"><span>8888</span></td>
+								<td class="col_blk_03"><span>8888</span></td>
+								<td class="col_blk_04"><span>8888</span></td>
+								<td class="col_blk_05"><span>8888</span></td>
+								<td class="col_blk_06"><span>8888</span></td>
+								<td class="col_blk_07"><span>8888</span></td>
+							</tr> -->
+							<tr><td>Field 1</td><td class="col_blk_07"><span>1%</span></td><td>759</td></tr>
+							<tr><td>Field 2</td><td class="col_blk_07"><span>2%</span></td><td>1300</td></tr>
+							<tr><td>Field 3</td><td class="col_blk_07"><span>5%</span></td><td>1160</td></tr></tbody>
+						</table>
 					</div>
-					<div class="col-sm-12 col-md-12 item psd_data_type2 data2">
-						<span class="item_title t-a-left">Current</span>
-						<span class="item_value iv_actualprogress">100</span>
-					</div>
-					<div class="col-sm-12 col-md-12 item psd_data_type3 data3">
-						<span class="item_title t-a-left"totalffb>Shortfall</span>
-						<span class="item_value iv_shortfall">20</span>
-					</div>
-				</div>
-				<div class="col-md-12 portlet_content portlet_table m-t-15">
-					<div class="row height_x2 highcharts_inside col3" data-mcs-theme="light">
-						<span>QUALITY VARIANCE</span><br>
-						<div class="col-md-12">
-							<div class="row m-10">
-								<table class="table">
-									<thead>
-									<tr>
-										<th class="col_separation">Field</th>
-										<th class="col_separation">Variance (%)</th>
-										<th class="col_separation">Total FFB (MT)</th>
-									</tr>
-									</thead>
-									<tbody>
-									<!-- <tr>
-										<td>8888</td>
-										<td class="col_blk_01"><span>8888</span></td>
-										<td class="col_blk_02"><span>8888</span></td>
-										<td class="col_blk_03"><span>8888</span></td>
-										<td class="col_blk_04"><span>8888</span></td>
-										<td class="col_blk_05"><span>8888</span></td>
-										<td class="col_blk_06"><span>8888</span></td>
-										<td class="col_blk_07"><span>8888</span></td>
-									</tr> -->
-									<tr><td>Field 1</td><td class="col_blk_07"><span>1%</span></td><td>759</td></tr>
-									<tr><td>Field 2</td><td class="col_blk_07"><span>2%</span></td><td>1300</td></tr>
-									<tr><td>Field 3</td><td class="col_blk_07"><span>5%</span></td><td>1160</td></tr></tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,146 @@
+
+
+/*
+
+
+dimension
+
+
+*/
+
+/*new*/
+div.portlet div.height_x1,
+div.portlet div.height_x1 div.highcharts_inside div {
+	height: 100px!important;
+}
+div.portlet div.height_x2,
+div.portlet div.height_x2 div.highcharts_inside div {
+	height: 243px!important;
+}
+div.portlet div.height_x3,
+div.portlet div.height_x3 div.highcharts_inside div {
+	height: 430px!important;
+}
+div.portlet div.height_x4,
+div.portlet div.height_x4 div.highcharts_inside div {
+	height: 500px!important;
+}
+
+
+
+
+.portlet_info .bottom_line {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top: 1px solid #558;
+	bottom: 0;
+	position: absolute;
+}
+
+
+
+
+
+/*
+
+
+
+
+portlet
+
+
+
+
+
+*/
+
+
+/*
+portlet_bar_group
+
+*/
+div.portlet_bar_group div.content {
+	background: #252237;
+}
+div.portlet_bar_group div.portlet_content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+div.portlet_bar_group div.portlet_title {
+	color: #fff;
+}
+
+/*subtitle*/
+div.portlet_bar_group .subtitle {
+	padding: 5px 0 15px;
+}
+
+/*chart*/
+div.portlet_bar_group .chart {
+	height: 330px;
+}
+
+/*table*/
+div.portlet_bar_group .table {
+	padding: 5px;
+	text-align: center;
+}
+
+div.portlet_bar_group .table .table_header {
+	padding: 5px;
+	font-size: .8em;
+	background: #113;
+}
+div.portlet_bar_group .table .table_content {
+	padding: 20px 0;
+	font-size: 2em;
+	background: #334;
+}
+
+div.portlet_bar_group .table_content_1 {
+	color: #0ff;
+}
+div.portlet_bar_group .table_content_2 {
+	color: #afa;
+}
+div.portlet_bar_group .table_content_3 .trend_down_1 {
+	color: #ff0;
+}
+div.portlet_bar_group .table_content_3 .trend_down_2 {
+	color: #f50;
+}
+div.portlet_bar_group .table_content_3 .trend_down_3 {
+	color: #f05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
