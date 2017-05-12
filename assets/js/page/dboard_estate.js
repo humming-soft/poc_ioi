@@ -625,5 +625,73 @@ $(document).ready(function(){
 		}
 	});
 
+	// var a = [1,2,5];
+	// var j = 0, i = 0;
+	// Highcharts.chart('dbar_chart_2', {
+	// 	chart: {
+	// 		type: 'bar'
+	// 	},
+	// 	title: {
+	// 		text: 'QUALITY VARIANCE'
+	// 	},
+	// 	xAxis: {
+	// 		categories: ['Field 1', 'Field 2', 'Field 3'],
+	// 		title: {
+	// 			text: null
+	// 		}
+	// 	},
+	// 	yAxis: {
+	// 		min: 0,
+	// 		title: {
+	// 			text: null
+	// 		},
+	// 		labels: {
+	// 			overflow: 'justify'
+	// 		}
+	// 	},
+	// 	tooltip: {
+	// 		formatter: function () {
+	// 				return '<b>'+this.x+'</b><br><span>' + this.series.name +':'+ this.y +'</span>';
+	// 		}
+	// 	},
+	// 	plotOptions: {
+	// 		bar: {
+	// 			dataLabels: {
+	// 				enabled: true,
+	// 				formatter : function(){
+	// 					if(this.series.name === 'Variance'){
+	// 						r = (a[j]) +"%";
+	// 						j++;
+	// 					}else{
+	// 						r = this.y;
+	// 					}
+	// 					return r;
+	// 				}
+	// 			}
+	// 		}
+	// 	},
+	// 	legend: {
+	// 		layout: 'vertical',
+	// 		align: 'right',
+	// 		verticalAlign: 'top',
+	// 		x: -40,
+	// 		y: 0,
+	// 		floating: true,
+	// 		borderWidth: 1,
+	// 		backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+	// 		shadow: true
+	// 	},
+	// 	credits: {
+	// 		enabled: false
+	// 	},
+	// 	series: [{
+	// 		name: 'Total FFB',
+	// 		data: [759, 1300, 1160]
+	// 	},{
+	// 		name: 'Variance',
+	// 		data: [7.59, 26, 58]
+	// 	}]
+	// });
+
 
 });	
