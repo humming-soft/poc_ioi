@@ -10,8 +10,12 @@ div#infographic div.ig_plate {
 	position: absolute;
 }
 div#infographic div img{
+	margin-top: -25px;
 	width: 100%;
 	height: 100%;
+}
+div#infographic div svg {
+	margin-top: -20px;
 }
 
 #dashboard {
@@ -274,6 +278,46 @@ div.status_group span.color_down_2 {
 div.status_group span.color_down_3 {
 	color: #f05!important;
 }
+
+/*legend*/
+#plate_commercial div.legend {
+	position: absolute;
+	top: -35px;
+	left: 20%;
+}
+#plate_commercial div.legend div,
+#plate_commercial div.legend div span {
+	display: inline-block;
+}
+#plate_commercial div.legend div {
+	padding: 0 10px;
+}
+#plate_commercial div.legend div span.icon {
+	padding: 0 5px 0 0;
+}
+
+#plate_commercial .legend .budget span.icon {
+	padding: 0 5px 0 0;
+	color: #09f;
+}
+#plate_commercial .legend .target span.icon {
+	padding: 0 5px 0 0;
+	color: #0ff;
+}
+#plate_commercial .legend .actual span.icon {
+	padding: 0 5px 0 0;
+	color: #c0c;
+}
+
+/*total planted*/
+div.portlet_total_planted {
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	color: #aff;
+}
+
 
 
 /*old*/
