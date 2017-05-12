@@ -149,6 +149,14 @@ span.plate_asof {
 	font-size: .8em;
 	color: #fc0;
 }
+#plate_commercial div.title1 > span {
+	display: inline-block;
+}
+span.ig_plate_asof {
+	padding: 0 0 0 10px;
+	font-size: .8em;
+	color: #fe0;
+}
 
 
 /*
@@ -1522,8 +1530,7 @@ div.portlet_eap div.content {
 /*portlet_product (Productivity)*/
 
 div.portlet_line_chart div.content,
-.portlet_block_number div.content,
-div.portlet_outurn div.content{
+.portlet_block_number div.content {
 	background: #252237;
 }
 .portlet_block_number .block_color_a4 {
@@ -1555,15 +1562,8 @@ div.psd_data_type3 {
 .f-s-25{
 	font-size: 25px;
 }
-.m-l-70{
-	margin-left: 70px;
-}
-.field-danger{
-	color: #cd0a0a !important;
-}
-.field-alert{
-	color: #ffc200 !important;
-}
+
+
 div.portlet_table table {
 	font-size: .9em;
 }
@@ -1576,23 +1576,6 @@ div.portlet_table table .col_separation {
 }
 div.portlet_table table tbody td {
 	border-bottom: 1px solid #669 !important;
-}
-.background_highlighted{
-	padding: 15px;
-	background: #262845;
-	margin-left: 15px;
-	border-radius: 5px;
-	border: 1px solid #000;
-}
-
-.table-style1 thead th:first-child{
-	border-bottom: 2px solid #00ccff;
-}
-.table-style1 thead th:nth-child(2){
-	border-bottom: 2px solid violet;
-}
-.table-style1 thead th:last-child{
-	border-bottom: 2px solid #f05b4f;
 }
 
 
