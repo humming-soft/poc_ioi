@@ -104,3 +104,185 @@ div.portlet_hi .table_content_3 .trend_down_3 {
 	color: #f05;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*
+portlet_yield_ha
+
+*/
+div.portlet_yield_ha div.content {
+	background: #252237;
+	height: 465px;
+}
+div.portlet_yield_ha div.portlet_content {
+}
+
+div.portlet_yield_ha div.content #chart_yield_ha {
+	height: 350px;
+}
+
+
+/*
+portlet_production_cost
+
+*/
+div.portlet_production_cost div.content {
+	background: #252237;
+	height: 465px;
+}
+div.portlet_production_cost div.portlet_content {
+	padding: 1-px;
+}
+div.portlet_production_cost div.portlet_title {
+	color: #fff;
+}
+
+/*subtitle*/
+div.portlet_production_cost .subtitle {
+	padding: 5px 0 15px;
+}
+
+/*chart*/
+div.portlet_production_cost .chart {
+	height: 200px;
+}
+
+/*table*/
+div.portlet_production_cost .table {
+	padding: 5px;
+	text-align: center;
+}
+
+div.portlet_production_cost .table .table_header {
+	padding: 5px;
+	font-size: .8em;
+	background: #113;
+}
+div.portlet_production_cost .table .table_content {
+	padding: 10px 0;
+	font-size: 2em;
+	background: #334;
+}
+
+div.portlet_production_cost .table_content_1 {
+	color: #0ff;
+}
+div.portlet_production_cost .table_content_2 {
+	color: #afa;
+}
+div.portlet_production_cost .table_content_3 .trend_down_1 {
+	color: #ff0;
+}
+div.portlet_production_cost .table_content_3 .trend_down_2 {
+	color: #f50;
+}
+div.portlet_production_cost .table_content_3 .trend_down_3 {
+	color: #f05;
+}
+
+
+/*
+portlet_region_production_data
+
+*/
+div.portlet_region_production_data div.content {
+	background: #252237;
+	height: 465px;
+}
+div.portlet_region_production_data div.portlet_content > div {
+	height: 405px !important;
+}
+
+/*table*/
+div.portlet_region_production_data table thead {
+	background: #224;
+	font-size: .8em;
+}
+div.portlet_region_production_data table tbody {
+	font-size: .8em;
+}
+div.portlet_region_production_data table thead tr:first-child th:first-child{
+	border-bottom: 1px solid #224;
+}
+div.portlet_region_production_data table thead tr th{
+	border: 1px solid #558;
+}
+
+div.portlet_region_production_data table .tg1_loc {
+	background: rgba(255,255,255,.1);
+}
+div.portlet_region_production_data table .tg1_ffb {
+	background: rgba(0,255,100,.05);
+}
+div.portlet_region_production_data table .tg1_cpo {
+	background: rgba(255,255,0,.1);
+}
+div.portlet_region_production_data table .tg1_pk {
+	background: rgba(255,130,0,.1);
+}
+
+div.portlet_region_production_data table .tg1_actual {
+	color: #faa;
+}
+div.portlet_region_production_data table .tg1_budget {
+	color: #09f;
+}
+div.portlet_region_production_data table .tgl_variance {
+	color: #cfc;
+}
+
+
+/*
+portlet_map
+
+*/
+div.portlet_map div.content {
+	background: rgba(0,0,0,.5);
+}
+div.portlet_map div.portlet_content {
+}
+
+div.portlet_map div.portlet_content img{
+	width: 100%;
+	height: 100%;
+}
+
+/*location_tag*/
+div.portlet_map .location_tag {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+div.portlet_map .location_tag span {
+	position: absolute;
+	display: block;
+	padding: 4px 10px;
+	font-size: 1em;
+	border-radius: 5px;
+	border:2px solid #fff;
+	font-weight: bold;
+	background: #00f;
+	color: #fff;
+}
+
+div.portlet_map .location_tag span.tag1 {
+	top: 15%;left: 70%;
+}
+div.portlet_map .location_tag span.tag2 {
+	top: 30%;left: 60%;
+}
+div.portlet_map .location_tag span.tag3 {
+	top: 30%;left: 75%;
+}
+div.portlet_map .location_tag span.tag4 {
+	top: 80%;left: 45%;
+}
+

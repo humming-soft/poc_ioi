@@ -9,11 +9,13 @@
 						<nav class="">
 							<a class="custom_breadcrumb-item" href="index.php"><i class="fa fa-home" aria-hidden="true"></i></a>
 							<span><i class="fa fa-angle-right breadcrumb_divider" aria-hidden="true"></i></span>
-							<span class="custom_breadcrumb-item active">Region</span>
+							<span class="custom_breadcrumb-item"><a href="region.php">Region</a></span>
+							<span><i class="fa fa-angle-right breadcrumb_divider" aria-hidden="true"></i></span>
+							<span class="custom_breadcrumb-item active">Group</span>
 						</nav>
 					</div>
 					<div class="title">
-						Region
+						Group
 					</div>
 				</div>
 				
@@ -22,7 +24,7 @@
 						
 						<div class="col-md-8">
 							<div class="row">
-								<?php include 'procurement/portlet/portlet_map.html'; ?>
+								<?php include 'procurement/portlet/portlet_map2.html'; ?>
 							</div>
 						</div>
 						<div class="col-md-4">

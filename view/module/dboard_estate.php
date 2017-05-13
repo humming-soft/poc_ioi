@@ -10,8 +10,8 @@
 							<span><i class="fa fa-angle-right breadcrumb_divider" aria-hidden="true"></i></span>
 							<span class="custom_breadcrumb-item"><a href="region.php">Region</a></span>
 							<span><i class="fa fa-angle-right breadcrumb_divider" aria-hidden="true"></i></span>
-							<!-- <span class="custom_breadcrumb-item"><a href="group.php">Group</a></span>
-							<span><i class="fa fa-angle-right breadcrumb_divider" aria-hidden="true"></i></span> -->
+							<span class="custom_breadcrumb-item"><a href="group.php">Group</a></span>
+							<span><i class="fa fa-angle-right breadcrumb_divider" aria-hidden="true"></i></span>
 							<span class="custom_breadcrumb-item active">Estate</span>
 						</nav>
 					</div>
@@ -27,10 +27,19 @@
 								<?php include 'procurement/portlet/info_station.html'; ?>
 							</div>
 						</div>
-						<div class="col-md-8">
+						<div class="col-md-4">
 							<div class="row">
-								<?php //include 'procurement/portlet/harvesting_info.html'; ?>
-
+								<?php include 'procurement/portlet/portlet_region_production_data.html'; ?>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="row">
+								<?php include 'procurement/portlet/portlet_production_cost.html'; ?>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="row">
+								<?php include 'procurement/portlet/portlet_yield_ha.html'; ?>
 							</div>
 						</div>
 					</div>

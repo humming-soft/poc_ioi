@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	$(".tag").click(function(){
-		window.location.href = "group.php";
+		window.location.href = "estate.php";
 	})
 
 	// 

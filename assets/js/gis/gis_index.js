@@ -350,6 +350,97 @@ $(document).ready(function(){
 			}]
 		});
 		
+		// barchart_4 (horizonntal barchart)
+
+		Highcharts.chart('barchart_4', {
+			chart: {
+				type: 'bar'
+			},
+			title: {
+				text: 'Efficiency Optimization by Branch'
+			},
+			xAxis: {
+				categories: [
+					'LD','SD','WM'
+				]
+			},
+			yAxis: [{
+				min: 0,
+				title: {
+					text: 'Employees'
+				}
+			}],
+			legend: {
+				shadow: false
+			},
+			tooltip: {
+				shared: true
+			},
+			plotOptions: {
+				column: {
+					grouping: false,
+					shadow: false,
+					borderWidth: 0
+				}
+			},
+			series: [{
+				name: 'FFB Budget',
+				color: '#f0f',
+				data: [150,150,150],
+				pointPadding: -0.2,
+				pointPlacement: 0
+			}, {
+				name: 'FFB Actual',
+				color: '#ff0',
+				data: [140,140,140],
+				pointPadding: 0.3,
+				pointPlacement: 0.07
+			}, {
+				name: 'FFB Variance',
+				color: '#0ff',
+				data: [140,140,140],
+				pointPadding: 0.3,
+				pointPlacement: 0.06
+			},
+			{
+				name: 'CPO Budget',
+				color: '#f0f',
+				data: [150,150,150],
+				pointPadding: -0.2,
+				pointPlacement: 0
+			}, {
+				name: 'CPO Actual',
+				color: '#ff0',
+				data: [140,140,140],
+				pointPadding: 0.3,
+				pointPlacement: 0.07
+			}, {
+				name: 'CPO Variance',
+				color: '#0ff',
+				data: [140,140,140],
+				pointPadding: 0.3,
+				pointPlacement: 0.06
+			},
+			{
+				name: 'PK Budget',
+				color: '#f0f',
+				data: [150,150,150],
+				pointPadding: -0.2,
+				pointPlacement: 0
+			}, {
+				name: 'PK Actual',
+				color: '#ff0',
+				data: [140,140,140],
+				pointPadding: 0.3,
+				pointPlacement: 0.07
+			}, {
+				name: 'PK Variance',
+				color: '#0ff',
+				data: [140,140,140],
+				pointPadding: 0.3,
+				pointPlacement: 0.06
+			}]
+		});
 		
 		
 		

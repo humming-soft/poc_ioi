@@ -201,10 +201,10 @@ overall panel
 
 #float_plate .barchart_group.table_group_1 {
 	position: absolute;
-	width: 42%;
-	height: 220px;
-	left: 27%;
-	top: 35%;
+	width: 32.5%;
+	height: 50%;
+	right: 3%;
+	top: 36.2%;
 	background: rgba(0,0,0,.3);
 }
 
@@ -240,7 +240,7 @@ overall panel
 div.barchart_group div.barchart_lr div.barchart > div {
 	position: absolute;
 	width: 15%;
-	height: 22%;
+	height: 21%;
 }
 div.barchart_group div.barchart_lr div.barchart div.highcharts-container {
 	background:none;!important;
@@ -251,10 +251,10 @@ div.barchart_group div.barchart_lr div.barchart div.highcharts-container {
 /*table*/
 div.barchart_group table thead {
 	background: #224;
-	font-size: .7em;
+	font-size: .8em;
 }
 div.barchart_group table tbody {
-	font-size: .7em;
+	font-size: .8em;
 }
 div.barchart_group table thead tr:first-child th:first-child{
 	border-bottom: 1px solid #224;
@@ -262,6 +262,30 @@ div.barchart_group table thead tr:first-child th:first-child{
 div.barchart_group table thead tr th{
 	border: 1px solid #558;
 }
+
+div.barchart_group table .tg1_loc {
+	background: rgba(255,255,255,.1);
+}
+div.barchart_group table .tg1_ffb {
+	background: rgba(0,255,100,.05);
+}
+div.barchart_group table .tg1_cpo {
+	background: rgba(255,255,0,.1);
+}
+div.barchart_group table .tg1_pk {
+	background: rgba(255,130,0,.1);
+}
+
+div.barchart_group table .tg1_actual {
+	color: #faa;
+}
+div.barchart_group table .tg1_budget {
+	color: #09f;
+}
+div.barchart_group table .tgl_variance {
+	color: #cfc;
+}
+
 
 
 /*status*/
@@ -370,8 +394,11 @@ barchart_group_5
 	width: 32%;
 	height: 50%;
 	background: rgba(0,0,0,.3);
+	z-index: 9999;
 }
-
+#float_plate .barchart_group.barchart_group_5 svg {
+	height: 290px;
+}
 
 
 

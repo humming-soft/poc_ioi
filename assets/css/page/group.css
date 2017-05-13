@@ -275,16 +275,22 @@ div.portlet_map .location_tag span {
 }
 
 div.portlet_map .location_tag span.tag1 {
-	top: 15%;left: 70%;
+	top: 15%;left: 75%;
 }
 div.portlet_map .location_tag span.tag2 {
-	top: 30%;left: 60%;
+	top: 30%;left: 55%;
 }
 div.portlet_map .location_tag span.tag3 {
-	top: 30%;left: 75%;
+	top: 37%;left: 47%;
 }
 div.portlet_map .location_tag span.tag4 {
-	top: 80%;left: 45%;
+	top: 60%;left: 44%;
+}
+div.portlet_map .location_tag span.tag5 {
+	top: 75%;left: 50%;
+}
+div.portlet_map .location_tag span.tag6 {
+	top: 60%;left: 60%;
 }
 
 

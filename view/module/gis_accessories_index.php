@@ -186,13 +186,97 @@
 			</div>
 			<!-- -- -->
 			<!-- -- -->
-			<!-- <div class="barchart_group table_group_1">
+			<div class="barchart_group table_group_1">
 				<div class="title1">
-					<span>Production Data<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></span>
+					<span>Regional Production Data<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></span>
 					<span class="ig_plate_asof">(As of : 15 Apr 2017)</span>
 				</div>
 				<div>
 					<table class="table">
+						<thead>
+							<tr>
+								<th>Location</th>
+								<th>FFB</th>
+								<th>CPO</th>
+								<th>PK</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tg1_loc">LD</td>
+								<td class="tg1_ffb">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+								<td class="tg1_cpo">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+								<td class="tg1_pk">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tg1_loc">SD</td>
+								<td class="tg1_ffb">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+								<td class="tg1_cpo">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+								<td class="tg1_pk">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tg1_loc">WM</td>
+								<td class="tg1_ffb">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+								<td class="tg1_cpo">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+								<td class="tg1_pk">
+									<div class="row">
+										<div class="col-md-6 tg1_actual">Actual</div><div class="col-md-6 tg1_actual">: 8888</div>
+										<div class="col-md-6 tg1_budget">Budget</div><div class="col-md-6 tg1_budget">: 8888</div>
+										<div class="col-md-6 tgl_variance">Variance</div><div class="col-md-6 tgl_variance">: 88%</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- <table class="table">
 						<thead>
 							<tr>
 								<th>Location</th>
@@ -251,23 +335,21 @@
 								<td>88%</td>
 							</tr>
 						</tbody>
-					</table>
+					</table> -->
 				</div>
-			</div> -->
+			</div>
 			<!-- -- -->
 			<!-- -- -->
-			<div class="barchart_group barchart_group_5">
+			<!-- <div class="barchart_group barchart_group_5">
 				<div class="title1">
 					<span>Regional Production Data<i style="padding-left: 10px;color:#00f;" class="fa fa-external-link" aria-hidden="true"></i></span>
 					<span class="ig_plate_asof">(As of : 15 Apr 2017)</span>
 				</div>
 				<div class="bar_chart">
-					<div class="bar_chart_plate">
-						<div class="bar_chart_left">poi</div>
-						<div class="bar_chart_right">poi</div>
+					<div id="barchart_4" class="bar_chart_plate">
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- -- -->
 			
 			<!-- <span class="title">OVERALL HARVESTING</span>
